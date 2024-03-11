@@ -13894,6 +13894,24 @@ textarea:focus {
   transition: all 0.2s linear;
 }
 
+.account-profile-img {
+  width: 100px;
+  height: 100px;
+}
+
+.active-nav-account {
+  background-color: #e4f2ed !important;
+}
+
+.account-list:hover {
+  background-color: #e4f2ed;
+  transition: all 0.2s linear;
+}
+
+.account-list {
+  transition: all 0.2s linear;
+}
+
 .custom-text-color {
   color: #900;
 }

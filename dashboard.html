@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css"
+      integrity="sha512-X/RSQYxFb/tvuz6aNRTfKXDnQzmnzoawgEQ4X8nZNftzs8KFFH23p/BA6D2k0QCM4R0sY1DEy9MIY9b3fwi+bg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css"
+      integrity="sha512-f28cvdA4Bq3dC9X9wNmSx21rjWI+5piIW/uoc2LuQ67asKxfQjUow2MkcCNcfJiaLrHcGbed1wzYe3dlY4w9gA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/app.css" />
+  </head>
+  <body>
+    <!-- HEADER  -->
+    <header class="header">
+      <div class="header-top container border-bottom border-2 border-light">
+        <div
+          class="header-top-main d-flex align-items-center justify-content-between py-3"
+        >
+          <div class="header-top-left">
+            <div class="header-logo">
+              <img
+                src="uploads/logo.png"
+                alt=""
+                class="logo-img logo img-cover"
+              />
+            </div>
+          </div>
+          <div class="header-top-center">
+            <form
+              action=""
+              class="header-search border border-2 border-primary rounded-2 d-flex align-items-center"
+            >
+              <input
+                class="border-0 h-40 ps-3 fw-medium"
+                placeholder="Search product"
+                type="text"
+                class="input-search"
+              />
+              <select
+                name=""
+                id=""
+                class="border-0 border-start border-primary border-2 py-2 px-2 d-flex align-items-center gap-3"
+              >
+                <option class="px-4" value="">All categorys</option>
+                <option value="">Apple</option>
+                <option value="">Orange</option>
+              </select>
+              <a
+                class="ms-2 cursor bg-primary p-2 d-flex justify-content-center align-content-center fs-4 fw-bold text-white"
+              >
+                <ion-icon class="fs-4" name="search-outline"></ion-icon>
+              </a>
+            </form>
+          </div>
+          <div
+            class="header-top-right d-flex align-items-center gap-3 fs-6 fw-medium"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown hover-list">
+                <a
+                  class="account nav-link d-flex align-items-center gap-2"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <ion-icon class="fs-4" name="person-outline"></ion-icon>
+                  <span>Account</span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Register</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Checkout</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Login</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <div
+              href=""
+              class="d-flex align-items-center gap-2 hover-list cursor"
+            >
+              <ion-icon class="fs-4" name="heart-outline"></ion-icon>
+              <span>Wishlist</span>
+            </div>
+            <div
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasRight"
+              aria-controls="offcanvasRight"
+              id="cart-click"
+              href=""
+              class="header-top-right-item header-cart d-flex align-items-center gap-2 hover-list cursor"
+            >
+              <span class="quality px-2 fs-6 rounded-5 bg-primary text-white"
+                >1</span
+              >
+              <ion-icon class="fs-4 fw-bold" name="cart-outline"></ion-icon>
+              <span>Cart</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div
+          class="menu-list d-flex align-items-center justify-content-between"
+        >
+          <div class="menu-right"></div>
+          <div class="menu-nav"></div>
+          <div class="menu-call">
+            <div class="call d-flex align-items-center gap-2 fw-medium">
+              <ion-icon name="call-outline" class="fs-4"></ion-icon>
+              <span class="fs-5">(+84) 868 412 519</span>
+            </div>
+          </div>
+        </div> -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul
+              class="navbar-nav me-auto my-2 d-flex gap-3 my-lg-0 navbar-nav-scroll"
+              style="--bs-scroll-height: 100px"
+            >
+              <li class="nav-item hover-list">
+                <a
+                  class="nav-link nav-link-item active fs-6 fw-medium"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link nav-link-item d-flex align-items-center gap-2 fs-6 fw-medium text-black"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Category <ion-icon name="chevron-down-outline"></ion-icon>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item fs-6 fw-medium" href="#">Apple</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item fs-6 fw-medium" href="#">Banana</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item fs-6 fw-medium" href="#">coconut</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link nav-link-item active fs-6 fw-medium"
+                  aria-current="page"
+                  href="#"
+                  >Blog</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link nav-link-item active fs-6 fw-medium"
+                  aria-current="page"
+                  href="#"
+                  >Contact</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link nav-link-item active fs-6 fw-medium"
+                  aria-current="page"
+                  href="#"
+                  >About</a
+                >
+              </li>
+            </ul>
+            <div class="menu-call">
+              <div class="call d-flex align-items-center gap-2 fw-medium">
+                <ion-icon name="call-outline" class="fs-4"></ion-icon>
+                <span class="fs-5">(+84) 868 412 519</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- SECTION TITLE  -->
+    <section class="section-title container-fluid bg-secondary">
+      <div
+        class="container py-4 d-flex align-items-center justify-content-between"
+      >
+        <h2 class="fs-5 fw-bolder">Account</h2>
+        <span class="text-border-color"
+          ><a class="text-decoration-none text-primary fw-medium" href=""
+            >Home</a
+          >
+          - Account</span
+        >
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="account-header container mt-7">
+      <div class="account-profile">
+        <div class="account-profile-img overflow-hidden">
+          <img
+            src="uploads/account.JPG"
+            alt=""
+            class="rounded-circle img-cover"
+          />
+        </div>
+        <div class="account-profile-info mt-1">
+          <h2 class="name fs-5">Hoang Thong nè!</h2>
+          <span class="date fs-6 text-border-color"
+            >Carrot Member Since Sep 2022</span
+          >
+        </div>
+      </div>
+    </section>
+    <section class="account-main container my-5">
+      <div class="row g-5">
+        <div class="col-lg-3 col-sm-12 col-12 wow fadeInLeft">
+          <div
+            class="account-nav p-5 border border-2 rounded-2 position-sticky top-0 border-secondary"
+          >
+            <ul class="p-0 d-flex flex-column gap-3">
+              <li
+                class="cursor account-list list-group-item d-flex align-items-center gap-3 fs-6 fw-medium text-border-color active-nav-account py-1 rounded-2 px-3"
+              >
+                <ion-icon name="grid"></ion-icon>
+                Dashboard
+              </li>
+              <li
+                class="cursor account-list list-group-item d-flex align-items-center gap-3 fs-6 fw-medium text-border-color py-1 rounded-2 px-3"
+              >
+                <ion-icon name="cart"></ion-icon>
+                My order
+              </li>
+              <li
+                class="cursor account-list list-group-item d-flex align-items-center gap-3 fs-6 fw-medium text-border-color py-1 rounded-2 px-3"
+              >
+                <ion-icon name="home"></ion-icon>
+                Address
+              </li>
+              <li
+                class="cursor account-list list-group-item d-flex align-items-center gap-3 fs-6 fw-medium text-border-color py-1 rounded-2 px-3"
+              >
+                <ion-icon name="person"></ion-icon>
+                Account
+              </li>
+              <li
+                class="cursor account-list list-group-item d-flex align-items-center gap-3 fs-6 fw-medium text-border-color py-1 rounded-2 px-3"
+              >
+                <ion-icon name="log-out"></ion-icon>
+                Logout
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="col-lg-9 col-sm-12 col-12 wow fadeInRight p-5 border border-2 rounded-2 border-secondary"
+        >
+          <div class="account-content">
+            <span
+              >Hello <span>Hoang Thong</span>
+              <span class="fw-medium">Not Hoang Thong</span>
+              <a href="">Logout</a></span
+            >
+            <p class="w-50 text-border-color mt-2">
+              From your account dashboard you can view your recent orders,
+              manage your shipping and billing addresses, and edit your password
+              and account details
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER  -->
+    <footer class="footer mt-6 bg-third">
+      <div class="container py-7 border-bottom border-2">
+        <div class="row">
+          <div
+            class="col-xl-4 col-lg-4 col-sm-6 d-flex gap-3 flex-column text-border-color"
+          >
+            <img src="uploads/logo.png" alt="" class="logo" />
+            <span
+              >Carrot is the biggest market of grocery products. Get your daily
+              needs from our store.</span
+            >
+            <ul class="footer-links p-0 d-flex flex-column gap-3">
+              <li
+                class="lcoation list-group-item fs-6 d-flex align-items-center gap-2"
+              >
+                <ion-icon
+                  class="fs-4 fw-bolder text-primary"
+                  name="location-outline"
+                ></ion-icon>
+                Công viên phần mềm Quang Trung, Quận 12
+              </li>
+              <li
+                class="mail list-group-item fs-6 d-flex align-items-center gap-2"
+              >
+                <ion-icon
+                  class="fs-4 fw-bolder text-primary"
+                  name="mail-outline"
+                ></ion-icon>
+                ht01252004@gmail.com
+              </li>
+              <li
+                class="call list-group-item fs-6 d-flex align-items-center gap-2"
+              >
+                <ion-icon
+                  class="fs-4 fw-bolder text-primary"
+                  name="call-outline"
+                ></ion-icon>
+                (+84) 868 412 519
+              </li>
+            </ul>
+          </div>
+          <div
+            class="col-xl-2 col-lg-4 col-sm-6 d-flex gap-3 flex-column text-border-color"
+          >
+            <h3 class="fs-5 text-dark fw-bold">Company</h3>
+            <ul class="footer-links p-0 d-flex flex-column gap-2">
+              <li class="list-group-item hover-list cursor">About us</li>
+              <li class="list-group-item hover-list cursor">
+                Delivery Information
+              </li>
+              <li class="list-group-item hover-list cursor">Privacy Policy</li>
+              <li class="list-group-item hover-list cursor">
+                Terms & Conditions
+              </li>
+              <li class="list-group-item hover-list cursor">Contact Us</li>
+              <li class="list-group-item hover-list cursor">Support Center</li>
+            </ul>
+          </div>
+          <div
+            class="col-xl-2 col-lg-4 col-sm-6 d-flex gap-3 flex-column text-border-color"
+          >
+            <h3 class="fs-5 text-dark fw-bold">Category</h3>
+            <ul class="footer-links p-0 d-flex flex-column gap-2">
+              <li class="list-group-item hover-list cursor">Dairv & Baker</li>
+              <li class="list-group-item hover-list cursor">
+                Fruits & Vegetable
+              </li>
+              <li class="list-group-item hover-list cursor">Snack & Spice</li>
+              <li class="list-group-item hover-list cursor">Juice & Drinks</li>
+              <li class="list-group-item hover-list cursor">Chicken & Meat</li>
+              <li class="list-group-item hover-list cursor">Fast Food</li>
+            </ul>
+          </div>
+          <div
+            class="col-xl-4 col-lg-4 col-sm-6 d-flex gap-3 flex-column text-border-color"
+          >
+            <h3 class="fs-5 text-dark fw-bold">Subscribe Our Newsletter</h3>
+            <div
+              class="form-search-footer border border-2 rounded-2 position-relative"
+            >
+              <input
+                class="border-0 w-100 px-4 py-2 fs-6 fw-medium"
+                placeholder="Search here..."
+                type="text"
+              />
+              <button
+                class="search-btn-footer fs-4 text-primary position-absolute"
+              >
+                <ion-icon class="fw-bold" name="send-outline"></ion-icon>
+              </button>
+            </div>
+            <div class="social-media">
+              <ul class="d-flex align-items-center gap-3 p-0">
+                <li class="list-group-item border rounded-2">
+                  <a
+                    class="p-2 fs-4 text-primary d-flex align-items-center justify-content-center"
+                    href="#"
+                    ><ion-icon name="logo-facebook"></ion-icon
+                  ></a>
+                </li>
+                <li class="list-group-item border rounded-2">
+                  <a
+                    class="p-2 fs-4 text-primary d-flex align-items-center justify-content-center"
+                    href="#"
+                    ><ion-icon name="logo-instagram"></ion-icon
+                  ></a>
+                </li>
+                <li class="list-group-item border rounded-2">
+                  <a
+                    class="p-2 fs-4 text-primary d-flex align-items-center justify-content-center"
+                    href="#"
+                    ><ion-icon name="logo-dribbble"></ion-icon
+                  ></a>
+                </li>
+                <li class="list-group-item border rounded-2">
+                  <a
+                    class="p-2 fs-4 text-primary d-flex align-items-center justify-content-center"
+                    href="#"
+                    ><ion-icon name="logo-github"></ion-icon
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="slide-img-footer wow fadeInUp">
+              <div id="slide-img-footer" class="owl-carousel owl-theme">
+                <div
+                  class="item cursor mx-1 position-relative slide-img-list overflow-hidden rounded-2"
+                >
+                  <img src="uploads/overlay1.jpg" alt="" class="img-cover" />
+                  <div
+                    class="img-overlay bg-dark bg-opacity-50 w-100 h-100 d-flex align-items-center justify-content-center position-absolute top-50 start-50 translate-middle"
+                  >
+                    <ion-icon
+                      class="fs-4 text-third"
+                      name="logo-instagram"
+                    ></ion-icon>
+                  </div>
+                </div>
+                <div
+                  class="item cursor mx-1 position-relative slide-img-list overflow-hidden rounded-2"
+                >
+                  <img src="uploads/overlay2.jpg" alt="" class="img-cover" />
+                  <div
+                    class="img-overlay bg-dark bg-opacity-50 w-100 h-100 d-flex align-items-center justify-content-center position-absolute top-50 start-50 translate-middle"
+                  >
+                    <ion-icon
+                      class="fs-4 text-third"
+                      name="logo-instagram"
+                    ></ion-icon>
+                  </div>
+                </div>
+                <div
+                  class="item cursor mx-1 position-relative slide-img-list overflow-hidden rounded-2"
+                >
+                  <img src="uploads/overlay3.jpg" alt="" class="img-cover" />
+                  <div
+                    class="img-overlay bg-dark bg-opacity-50 w-100 h-100 d-flex align-items-center justify-content-center position-absolute top-50 start-50 translate-middle"
+                  >
+                    <ion-icon
+                      class="fs-4 text-third"
+                      name="logo-instagram"
+                    ></ion-icon>
+                  </div>
+                </div>
+                <div
+                  class="item cursor mx-1 position-relative slide-img-list overflow-hidden rounded-2"
+                >
+                  <img src="uploads/overlay4.jpg" alt="" class="img-cover" />
+                  <div
+                    class="img-overlay bg-dark bg-opacity-50 w-100 h-100 d-flex align-items-center justify-content-center position-absolute top-50 start-50 translate-middle"
+                  >
+                    <ion-icon
+                      class="fs-4 text-third"
+                      name="logo-instagram"
+                    ></ion-icon>
+                  </div>
+                </div>
+                <div
+                  class="item cursor mx-1 position-relative slide-img-list overflow-hidden rounded-2"
+                >
+                  <img src="uploads/overlay1.jpg" alt="" class="img-cover" />
+                  <div
+                    class="img-overlay bg-dark bg-opacity-50 w-100 h-100 d-flex align-items-center justify-content-center position-absolute top-50 start-50 translate-middle"
+                  >
+                    <ion-icon
+                      class="fs-4 text-third"
+                      name="logo-instagram"
+                    ></ion-icon>
+                  </div>
+                </div>
+                <div
+                  class="item cursor mx-1 position-relative slide-img-list overflow-hidden rounded-2"
+                >
+                  <img src="uploads/overlay2.jpg" alt="" class="img-cover" />
+                  <div
+                    class="img-overlay bg-dark bg-opacity-50 w-100 h-100 d-flex align-items-center justify-content-center position-absolute top-50 start-50 translate-middle"
+                  >
+                    <ion-icon
+                      class="fs-4 text-third"
+                      name="logo-instagram"
+                    ></ion-icon>
+                  </div>
+                </div>
+                <div
+                  class="item cursor mx-1 position-relative slide-img-list overflow-hidden rounded-2"
+                >
+                  <img src="uploads/overlay3.jpg" alt="" class="img-cover" />
+                  <div
+                    class="img-overlay bg-dark bg-opacity-50 w-100 h-100 d-flex align-items-center justify-content-center position-absolute top-50 start-50 translate-middle"
+                  >
+                    <ion-icon
+                      class="fs-4 text-third"
+                      name="logo-instagram"
+                    ></ion-icon>
+                  </div>
+                </div>
+                <div
+                  class="item cursor mx-1 position-relative slide-img-list overflow-hidden rounded-2"
+                >
+                  <img src="uploads/overlay4.jpg" alt="" class="img-cover" />
+                  <div
+                    class="img-overlay bg-dark bg-opacity-50 w-100 h-100 d-flex align-items-center justify-content-center position-absolute top-50 start-50 translate-middle"
+                  >
+                    <ion-icon
+                      class="fs-4 text-third"
+                      name="logo-instagram"
+                    ></ion-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container footer-info py-3 text-center">
+        <h3 class="fs-6 fw-normal">
+          @2024 <span class="text-primary">Carrot</span>, All rights reserved.
+        </h3>
+      </div>
+    </footer>
+
+    <!-- Modal product -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="custom-modal-width modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header p-0 pt-3 pe-3 border-0">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-3 pt-0 p-0">
+            <div class="row">
+              <div class="col-md-5 col-sm-12 col-xs-12">
+                <div class="modal-img rounded-2 overflow-hidden">
+                  <img src="uploads/tab-1.jpg" alt="" class="img-cover" />
+                </div>
+              </div>
+              <div class="col-md-7 col-sm-12 col-xs-12">
+                <div class="modal-right">
+                  <h2 class="modal-product-name fs-6 fw-bolder">
+                    Peach Seeds Of Change Oraganic Quinoa, Brown fruit
+                  </h2>
+                  <span class="modal-product-des text-border-color"
+                    >Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1900s,</span
+                  >
+                  <div
+                    class="modal-review border-top border-2 mt-2 pt-2 d-flex gap-2 align-items-center"
+                  >
+                    <div class="star fs-5 text-warning">
+                      <ion-icon name="star"></ion-icon
+                      ><ion-icon name="star"></ion-icon
+                      ><ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half"></ion-icon>
+                    </div>
+                    <span class="fw-medium text-border-color"
+                      >( 75 Review )</span
+                    >
+                  </div>
+                  <div class="modal-product-price d-flex gap-3 align-items-end">
+                    <span class="modal-price-old fs-4 fw-bolder text-primary"
+                      >$ <span>120.25</span></span
+                    >
+                    <del class="modal-price-new fs-5 text-border-color"
+                      >$ <span>123.25</span></del
+                    >
+                  </div>
+                  <div class="modal-size-weight d-flex mt-2 gap-2">
+                    <h5 class="fs-6 fw-medium">Size/Weight:</h5>
+                    <div class="modal-kg">
+                      <ul class="d-flex gap-2 p-0">
+                        <li
+                          class="active-color list-group-item cursor border px-1 rounded-2 d-flex align-items-center justify-content-center fs-8"
+                        >
+                          500gm
+                        </li>
+                        <li
+                          class="list-group-item cursor border px-1 rounded-2 d-flex align-items-center justify-content-center fs-8"
+                        >
+                          1kg
+                        </li>
+                        <li
+                          class="list-group-item cursor border px-1 rounded-2 d-flex align-items-center justify-content-center fs-8"
+                        >
+                          1.5kg
+                        </li>
+                        <li
+                          class="list-group-item cursor border px-1 rounded-2 d-flex align-items-center justify-content-center fs-8"
+                        >
+                          2kg
+                        </li>
+                        <li
+                          class="list-group-item cursor border px-1 rounded-2 d-flex align-items-center justify-content-center fs-8"
+                        >
+                          5kg
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="modal-addcart d-flex gap-4">
+                    <div class="modal-quatity d-flex gap-2">
+                      <input
+                        type="text"
+                        name=""
+                        minlength="1"
+                        maxlength="20"
+                        value="1"
+                        id=""
+                        class="quatity text-center border-1 border-border-color rounded-2 px-2"
+                      />
+                      <div
+                        class="modal-btn-add-del d-flex flex-column justify-content-between"
+                      >
+                        <button
+                          type="submit"
+                          class="plus border border-border-color rounded-2 d-flex align-items-center justify-content-center"
+                          id="modal-add"
+                        >
+                          <ion-icon name="add"></ion-icon>
+                        </button>
+                        <button
+                          type="submit"
+                          class="minus border border-border-color rounded-2 d-flex align-items-center justify-content-center"
+                          id="modal-remove"
+                        >
+                          <ion-icon name="remove"></ion-icon>
+                        </button>
+                      </div>
+                    </div>
+                    <button
+                      type="submit"
+                      class="btn btn-primary text-white fw-bolder"
+                    >
+                      Add To Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- MODAL ADD TO CART  -->
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title fs-5 fw-bolder" id="offcanvasRightLabel">
+          My Cart
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body d-flex flex-column justify-content-between">
+        <div class="overlay-cart-top">
+          <ul class="modal-cart-list px-0">
+            <li
+              class="list-group-item mx-1 my-4 modal-cart-item border-bottom border-secondary border-2 mb-3 pb-3"
+            >
+              <div class="row">
+                <div class="col-4 overflow-hidden rounded-2">
+                  <img src="uploads/cart1.jpg" class="img-cover" alt="" />
+                </div>
+                <div class="col-8">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <h3 class="modal-product-name fs-6">Fresh Pomearanate</h3>
+                    <code class="cursor remove-pro"
+                      ><ion-icon class="fs-5" name="close-outline"></ion-icon
+                    ></code>
+                  </div>
+                  <span class="modal-product-price">
+                    $ <span>123.000</span></span
+                  >
+                  <div class="modal-cart-qty text-center mt-1">
+                    <div
+                      class="modal-cart-qty-plus-minus border rounded-2 m-0 d-flex align-items-center justify-content-center border-1"
+                    >
+                      <button type="button" class="">
+                        <ion-icon name="add-outline"></ion-icon>
+                      </button>
+                      <input
+                        type="text"
+                        name=""
+                        value="1"
+                        minlength="1"
+                        maxlength="20"
+                        class="quatity text-center border-0"
+                        id=""
+                      />
+                      <button type="button" class="">
+                        <ion-icon name="remove-outline"></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li
+              class="list-group-item mx-1 my-4 modal-cart-item border-bottom border-secondary border-2 mb-3 pb-3"
+            >
+              <div class="row">
+                <div class="col-4 overflow-hidden rounded-2">
+                  <img src="uploads/cart2.jpg" class="img-cover" alt="" />
+                </div>
+                <div class="col-8">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <h3 class="modal-product-name fs-6">Fresh Pomearanate</h3>
+                    <code class="cursor remove-pro"
+                      ><ion-icon class="fs-5" name="close-outline"></ion-icon
+                    ></code>
+                  </div>
+                  <span class="modal-product-price">
+                    $ <span>123.000</span></span
+                  >
+                  <div class="modal-cart-qty text-center mt-1">
+                    <div
+                      class="modal-cart-qty-plus-minus border rounded-2 m-0 d-flex align-items-center justify-content-center border-1"
+                    >
+                      <button type="button" class="">
+                        <ion-icon name="add-outline"></ion-icon>
+                      </button>
+                      <input
+                        type="text"
+                        name=""
+                        value="1"
+                        minlength="1"
+                        maxlength="20"
+                        class="quatity text-center border-0"
+                        id=""
+                      />
+                      <button type="button" class="">
+                        <ion-icon name="remove-outline"></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li
+              class="list-group-item mx-1 my-4 modal-cart-item border-bottom border-secondary border-2 mb-3 pb-3"
+            >
+              <div class="row">
+                <div class="col-4 overflow-hidden rounded-2">
+                  <img src="uploads/cart3.jpg" class="img-cover" alt="" />
+                </div>
+                <div class="col-8">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <h3 class="modal-product-name fs-6">Fresh Pomearanate</h3>
+                    <code class="cursor remove-pro"
+                      ><ion-icon class="fs-5" name="close-outline"></ion-icon
+                    ></code>
+                  </div>
+                  <span class="modal-product-price">
+                    $ <span>123.000</span></span
+                  >
+                  <div class="modal-cart-qty text-center mt-1">
+                    <div
+                      class="modal-cart-qty-plus-minus border rounded-2 m-0 d-flex align-items-center justify-content-center border-1"
+                    >
+                      <button type="button" class="">
+                        <ion-icon name="add-outline"></ion-icon>
+                      </button>
+                      <input
+                        type="text"
+                        name=""
+                        value="1"
+                        minlength="1"
+                        maxlength="20"
+                        class="quatity text-center border-0"
+                        id=""
+                      />
+                      <button type="button" class="">
+                        <ion-icon name="remove-outline"></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="modal-cart-bottom border-top border-secondary border-2 pt-3"
+        >
+          <div class="modal-cart-sub-total">
+            <div
+              class="d-flex justify-content-between py-2 align-items-between"
+            >
+              <h5 class="fs-6 fw-normal text-border-color">Sub-Total:</h5>
+              <span class="fw-bold fs-6">$300.00</span>
+            </div>
+            <div
+              class="d-flex justify-content-between py-2 align-items-between"
+            >
+              <h5 class="fs-6 fw-normal text-border-color">VAT (20%) :</h5>
+              <span class="fw-bold fs-6">$60.00</span>
+            </div>
+            <div
+              class="d-flex justify-content-between py-2 align-items-between"
+            >
+              <h5 class="fs-6 fw-normal text-border-color">Sub-Total</h5>
+              <span class="fw-bold fs-6">$360.00</span>
+            </div>
+          </div>
+          <div class="modal-cart-btn d-flex justify-content-between gap-7 mb-3">
+            <button
+              type="button"
+              class="btn btn-primary fw-bolder w-50 text-white"
+            >
+              View Cart
+            </button>
+            <button
+              type="button"
+              class="btn border-primary fw-bolder w-50 text-primary"
+            >
+              Checkout
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="modal-cart-view"
+      class="h-100 wow top-0 modal-cart-view position-fixed z-5"
+    >
+      <div
+        class="modal-cart-inner h-100 m-0 px-3 position-relative flex-column bg-white d-flex justify-content-between"
+      >
+        <div class="modal-cart-top">
+          <div
+            class="modal-cart-title d-flex justify-content-between mt-4 pb-3 border-secondary border-2 border-bottom"
+          >
+            <h6 class="fs-5 fw-bolder">My Cart</h6>
+            <button id="close-cart" type="button" class="close-cart">
+              <ion-icon
+                class="text-danger fs-4"
+                name="close-outline"
+              ></ion-icon>
+            </button>
+          </div>
+          <ul class="modal-cart-list px-0">
+            <li
+              class="list-group-item mx-1 my-4 modal-cart-item border-bottom border-secondary border-2 mb-3 pb-3"
+            >
+              <div class="row">
+                <div class="col-4 overflow-hidden rounded-2">
+                  <img src="uploads/cart1.jpg" class="img-cover" alt="" />
+                </div>
+                <div class="col-8">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <h3 class="modal-product-name fs-6">Fresh Pomearanate</h3>
+                    <code class="cursor remove-pro"
+                      ><ion-icon class="fs-5" name="close-outline"></ion-icon
+                    ></code>
+                  </div>
+                  <span class="modal-product-price">
+                    $ <span>123.000</span></span
+                  >
+                  <div class="modal-cart-qty text-center mt-1">
+                    <div
+                      class="modal-cart-qty-plus-minus border rounded-2 m-0 d-flex align-items-center justify-content-center border-1"
+                    >
+                      <button type="button" class="">
+                        <ion-icon name="add-outline"></ion-icon>
+                      </button>
+                      <input
+                        type="text"
+                        name=""
+                        value="1"
+                        minlength="1"
+                        maxlength="20"
+                        class="quatity text-center border-0"
+                        id=""
+                      />
+                      <button type="button" class="">
+                        <ion-icon name="remove-outline"></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li
+              class="list-group-item mx-1 my-4 modal-cart-item border-bottom border-secondary border-2 mb-3 pb-3"
+            >
+              <div class="row">
+                <div class="col-4 overflow-hidden rounded-2">
+                  <img src="uploads/cart2.jpg" class="img-cover" alt="" />
+                </div>
+                <div class="col-8">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <h3 class="modal-product-name fs-6">Fresh Pomearanate</h3>
+                    <code class="cursor remove-pro"
+                      ><ion-icon class="fs-5" name="close-outline"></ion-icon
+                    ></code>
+                  </div>
+                  <span class="modal-product-price">
+                    $ <span>123.000</span></span
+                  >
+                  <div class="modal-cart-qty text-center mt-1">
+                    <div
+                      class="modal-cart-qty-plus-minus border rounded-2 m-0 d-flex align-items-center justify-content-center border-1"
+                    >
+                      <button type="button" class="">
+                        <ion-icon name="add-outline"></ion-icon>
+                      </button>
+                      <input
+                        type="text"
+                        name=""
+                        value="1"
+                        minlength="1"
+                        maxlength="20"
+                        class="quatity text-center border-0"
+                        id=""
+                      />
+                      <button type="button" class="">
+                        <ion-icon name="remove-outline"></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li
+              class="list-group-item mx-1 my-4 modal-cart-item border-bottom border-secondary border-2 mb-3 pb-3"
+            >
+              <div class="row">
+                <div class="col-4 overflow-hidden rounded-2">
+                  <img src="uploads/cart3.jpg" class="img-cover" alt="" />
+                </div>
+                <div class="col-8">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <h3 class="modal-product-name fs-6">Fresh Pomearanate</h3>
+                    <code class="cursor remove-pro"
+                      ><ion-icon class="fs-5" name="close-outline"></ion-icon
+                    ></code>
+                  </div>
+                  <span class="modal-product-price">
+                    $ <span>123.000</span></span
+                  >
+                  <div class="modal-cart-qty text-center mt-1">
+                    <div
+                      class="modal-cart-qty-plus-minus border rounded-2 m-0 d-flex align-items-center justify-content-center border-1"
+                    >
+                      <button type="button" class="">
+                        <ion-icon name="add-outline"></ion-icon>
+                      </button>
+                      <input
+                        type="text"
+                        name=""
+                        value="1"
+                        minlength="1"
+                        maxlength="20"
+                        class="quatity text-center border-0"
+                        id=""
+                      />
+                      <button type="button" class="">
+                        <ion-icon name="remove-outline"></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="modal-cart-bottom">
+          <div class="modal-cart-sub-total">
+            <div
+              class="d-flex justify-content-between py-2 align-items-between"
+            >
+              <h5 class="fs-6 fw-normal text-border-color">Sub-Total:</h5>
+              <span class="fw-bold fs-6">$300.00</span>
+            </div>
+            <div
+              class="d-flex justify-content-between py-2 align-items-between"
+            >
+              <h5 class="fs-6 fw-normal text-border-color">VAT (20%) :</h5>
+              <span class="fw-bold fs-6">$60.00</span>
+            </div>
+            <div
+              class="d-flex justify-content-between py-2 align-items-between"
+            >
+              <h5 class="fs-6 fw-normal text-border-color">Sub-Total</h5>
+              <span class="fw-bold fs-6">$360.00</span>
+            </div>
+          </div>
+          <div class="modal-cart-btn d-flex justify-content-between gap-7 mb-3">
+            <button
+              type="button"
+              class="btn btn-primary fw-bolder w-50 text-white"
+            >
+              View Cart
+            </button>
+            <button
+              type="button"
+              class="btn border-primary fw-bolder w-50 text-primary"
+            >
+              Checkout
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="
+    https://cdn.jsdelivr.net/npm/wowjs@1.1.3/dist/wow.min.js
+    "></script>
+    <link
+      href="
+    https://cdn.jsdelivr.net/npm/wowjs@1.1.3/css/libs/animate.min.css
+    "
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"
+      integrity="sha512-9CWGXFSJ+/X0LWzSRCZFsOPhSfm6jbnL+Mpqo0o8Ke2SYr8rCTqb4/wGm+9n13HtDE1NQpAEOrMecDZw4FXQGg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/owl.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>

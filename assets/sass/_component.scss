@@ -341,3 +341,17 @@ textarea:focus {
 .card-news img {
   transition: all 0.2s linear;
 }
+.account-profile-img {
+  width: 100px;
+  height: 100px;
+}
+.active-nav-account {
+  background-color: $secondary !important;
+}
+.account-list:hover {
+  background-color: $secondary;
+  transition: all 0.2s linear;
+}
+.account-list {
+  transition: all 0.2s linear;
+}
