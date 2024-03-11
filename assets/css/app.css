@@ -13860,6 +13860,11 @@ input[type=email]:focus {
   box-shadow: 1px 1px 5px #64b496;
 }
 
+input[type=password]:focus {
+  border-color: #64b496;
+  box-shadow: 1px 1px 5px #64b496;
+}
+
 select[type=email]:focus {
   border-color: #64b496;
   box-shadow: 1px 1px 5px #64b496;
@@ -13869,6 +13874,24 @@ textarea:focus {
   padding: 1rem 0.75rem !important;
   border-color: #64b496 !important;
   box-shadow: none !important;
+}
+
+.button-news:hover {
+  gap: 1rem !important;
+  transition: all 0.2s linear;
+}
+
+.button-news {
+  transition: all 0.2s linear;
+}
+
+.card-news:hover img {
+  transform: scale(1.1);
+  transition: all 0.2s linear;
+}
+
+.card-news img {
+  transition: all 0.2s linear;
 }
 
 .custom-text-color {

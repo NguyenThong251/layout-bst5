@@ -312,6 +312,10 @@ input[type="email"]:focus {
   border-color: $primary;
   box-shadow: 1px 1px 5px $primary;
 }
+input[type="password"]:focus {
+  border-color: $primary;
+  box-shadow: 1px 1px 5px $primary;
+}
 select[type="email"]:focus {
   border-color: $primary;
   box-shadow: 1px 1px 5px $primary;
@@ -322,4 +326,18 @@ textarea:focus {
   padding: 1rem 0.75rem !important;
   border-color: $primary !important;
   box-shadow: none !important;
+}
+.button-news:hover {
+  gap: 1rem !important;
+  transition: all 0.2s linear;
+}
+.button-news {
+  transition: all 0.2s linear;
+}
+.card-news:hover img {
+  transform: scale(1.1);
+  transition: all 0.2s linear;
+}
+.card-news img {
+  transition: all 0.2s linear;
 }

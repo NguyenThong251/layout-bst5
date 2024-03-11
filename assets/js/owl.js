@@ -91,3 +91,27 @@ $(document).ready(function () {
     },
   });
 });
+$(document).ready(function () {
+  $("#blog-new").owlCarousel({
+    autoPlay: 5000, //Set AutoPlay to 3 seconds
+    pagination: false, // ẩn nút next prev
+    items: 4,
+    // itemsDesktop: [1199, 3],
+    // itemsDesktopSmall: [979, 3],
+    responsive: {
+      0: {
+        items: 4,
+        nav: true,
+      },
+      600: {
+        items: 2,
+        nav: false,
+      },
+      1000: {
+        items: 2,
+        nav: true,
+        loop: false,
+      },
+    },
+  });
+});
