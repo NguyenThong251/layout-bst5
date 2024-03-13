@@ -249,137 +249,178 @@
               <div class="form-logo d-flex justify-content-center">
                 <img src="uploads/logo.png" alt="" width="120" />
               </div>
-              <form
-                action=""
-                class="form-content mt-3 d-flex flex-column gap-3"
-              >
-                <div class="row group-form">
-                  <div class="col-md-6">
-                    <div class="form-item">
-                      <label for="firstname" class="fw-medium">Firstname</label>
-                      <input
-                        id="firstname"
-                        type="text"
-                        required
-                        class="w-100 border rounded-1 border-secondary py-2 px-3 mt-2"
-                        placeholder="Firstname"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="form-item">
-                      <label for="lastname" class="fw-medium">Lastname</label>
-                      <input
-                        id="lastname"
-                        type="text"
-                        required
-                        class="w-100 border rounded-1 border-secondary py-2 px-3 mt-2"
-                        placeholder="Lastname"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="row group-form">
-                  <div class="col-md-6">
-                    <div class="form-item">
-                      <label for="email" class="fw-medium">Email</label>
-                      <input
-                        id="email"
-                        type="text"
-                        required
-                        class="w-100 border rounded-1 border-secondary py-2 px-3 mt-2"
-                        placeholder="Email"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="form-item">
-                      <label for="call" class="fw-medium">Phone Number</label>
-                      <input
-                        id="call"
-                        type="text"
-                        required
-                        class="w-100 border rounded-1 border-secondary py-2 px-3 mt-2"
-                        placeholder="Enter Your Phone Number"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="row group-form">
-                  <div class="col-md-6">
-                    <div class="form-item">
-                      <label for="password" class="fw-medium">Password</label>
-                      <input
-                        id="password"
-                        type="text"
-                        required
-                        class="w-100 border rounded-1 border-secondary py-2 px-3 mt-2"
-                        placeholder="Password"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="form-item">
-                      <label for="passconfirm" class="fw-medium"
-                        >Password confirm</label
-                      >
-                      <input
-                        id="call"
-                        type="password"
-                        required
-                        class="w-100 border rounded-1 border-secondary py-2 px-3 mt-2"
-                        placeholder="Password confirm"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="form-item">
-                  <label for="address" class="fw-medium">Address</label>
+              <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-6">
+                  <label for="validationCustom01" class="form-label fw-medium"
+                    >First name</label
+                  >
                   <input
-                    id="address"
                     type="text"
+                    class="form-control"
+                    id="validationCustom01"
                     required
-                    class="w-100 border rounded-1 border-secondary py-2 px-3 mt-2"
-                    placeholder="Address"
                   />
+                  <div class="valid-feedback">Looks good!</div>
                 </div>
-                <div class="row group-form">
-                  <div class="col-md-6">
-                    <div class="form-item">
-                      <label for="city" class="fw-medium">City</label>
-                      <input
-                        id="city"
-                        type="text"
-                        required
-                        class="w-100 border rounded-1 border-secondary py-2 px-3 mt-2"
-                        placeholder="City"
-                      />
-                    </div>
+                <div class="col-md-6">
+                  <label for="validationCustom02" class="form-label fw-medium"
+                    >Last name</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationCustom02"
+                    required
+                  />
+                  <div class="valid-feedback">Looks good!</div>
+                </div>
+                <div class="col-md-6">
+                  <label
+                    for="validationCustomEmail"
+                    class="form-label fw-medium"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="validationCustomEmail"
+                    aria-describedby="inputGroupPrepend"
+                    required
+                  />
+                  <div class="invalid-feedback">Choose a Email.</div>
+                </div>
+                <div class="col-md-6">
+                  <label for="validationCustomCall" class="form-label fw-medium"
+                    >Phone number</label
+                  >
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="validationCustomCall"
+                    aria-describedby="inputGroupPrepend"
+                    required
+                  />
+                  <div class="invalid-feedback">Choose a Phone Number.</div>
+                </div>
+                <div class="col-md-6">
+                  <label for="password" class="form-label fw-medium"
+                    >Password</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="password"
+                    aria-describedby="inputGroupPrepend"
+                    required
+                    pattern="(?=.*\d.*)(?=.*[a-zA-Z].*)(?=.*[!#\$%&\?].*).{8,}"
+                  />
+                  <div class="invalid-feedback">
+                    Incorrect password formatPlease
                   </div>
-                  <div class="col-md-6">
-                    <div class="form-item">
-                      <label for="country" class="fw-medium">Country</label>
-                      <input
-                        id="country"
-                        type="text"
-                        required
-                        class="w-100 border rounded-1 border-secondary py-2 px-3 mt-2"
-                        placeholder="Country"
-                      />
+                </div>
+                <div class="col-md-6">
+                  <label for="passwordconfirm" class="form-label fw-medium"
+                    >Password confirm</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="passwordconfirm"
+                    aria-describedby="inputGroupPrepend"
+                    required
+                    pattern="(?=.*\d.*)(?=.*[a-zA-Z].*)(?=.*[!#\$%&\?].*).{8,}"
+                  />
+                  <div class="invalid-feedback">
+                    Incorrect password formatPlease
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <label for="Address" class="form-label fw-medium"
+                    >Address</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="Address"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Please provide a valid city.
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label for="validationCustom03" class="form-label fw-medium"
+                    >City</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationCustom03"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Please provide a valid city.
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <label for="Country" class="form-label fw-medium"
+                    >Country</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="Country"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Please select a valid state.
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <label for="validationCustom05" class="form-label fw-medium"
+                    >Zip</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationCustom05"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Please provide a valid zip.
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="invalidCheck"
+                      required
+                    />
+                    <label class="form-check-label" for="invalidCheck">
+                      Agree to terms and conditions
+                    </label>
+                    <div class="invalid-feedback">
+                      You must agree before submitting.
                     </div>
                   </div>
                 </div>
                 <div
-                  class="login-btn mt-2 d-flex justify-content-between align-items-center"
+                  class="col-12 d-flex justify-content-between align-items-end mt-4"
                 >
-                  <button class="btn btn-primary text-white fw-semibold">
+                  <button
+                    class="btn btn-primary fw-bolder text-white"
+                    type="submit"
+                  >
                     Signup
                   </button>
-                  <span
-                    ><a
-                      class="text-border-color text-decoration-none fs-6"
+                  <span>
+                    <a
+                      class="text-decoration-none fw-semibold text-primary fs-6"
                       href="#"
-                      >Have an account?</a
+                      >Login?</a
                     ></span
                   >
                 </div>

@@ -258,68 +258,108 @@
               aria-label="Close"
             ></button>
           </div>
-          <form action="">
-            <div class="modal-body">
-              <div class="form-item">
-                <label for="firstname" class="fw-medium">Firstname</label>
+          <div class="modal-body row g-3">
+            <form class="row g-3 needs-validation" novalidate>
+              <div class="col-md-6 position-relative">
+                <label for="validationTooltip01" class="form-label"
+                  >First name</label
+                >
                 <input
-                  id="firstname"
                   type="text"
-                  required=""
-                  class="w-100 border rounded-1 border-secondary py-2 px-3 mt-2"
+                  class="form-control"
+                  id="validationTooltip01"
+                  required
                   placeholder="Firstname"
                 />
+                <div class="valid-tooltip">Looks good!</div>
+                <div
+                  id="validationServerUsernameFeedback"
+                  class="invalid-feedback"
+                >
+                  Please choose a firstname.
+                </div>
               </div>
-              <div class="form-item">
-                <label for="lastname" class="fw-medium">Lastname</label>
+              <div class="col-md-6 position-relative">
+                <label for="validationTooltip02" class="form-label"
+                  >Last name</label
+                >
                 <input
-                  id="lastname"
                   type="text"
-                  required=""
-                  class="w-100 border rounded-1 border-secondary py-2 px-3 mt-2"
+                  class="form-control"
+                  id="validationTooltip02"
+                  required
                   placeholder="Lastname"
                 />
+                <div class="valid-tooltip">Looks good!</div>
+                <div
+                  id="validationServerUsernameFeedback"
+                  class="invalid-feedback"
+                >
+                  Please choose a lastname.
+                </div>
               </div>
-              <div class="form-item">
-                <label for="email" class="fw-medium">Email</label>
+              <div class="col-md-12 position-relative">
+                <label for="email" class="form-label">Email</label>
                 <input
+                  type="email"
+                  class="form-control"
                   id="email"
-                  type="text"
-                  required=""
-                  class="w-100 border rounded-1 border-secondary py-2 px-3 mt-2"
+                  required
                   placeholder="Email"
                 />
+                <div class="valid-tooltip">Looks good!</div>
+                <div
+                  id="validationServerUsernameFeedback"
+                  class="invalid-feedback"
+                >
+                  Please choose a email.
+                </div>
               </div>
-              <div class="form-item">
-                <label for="call" class="fw-medium">Phone Number</label>
+              <div class="col-md-12 position-relative">
+                <label for="phoneNumber" class="form-label">Phone number</label>
                 <input
-                  id="call"
-                  type="text"
-                  required=""
-                  class="w-100 border rounded-1 border-secondary py-2 px-3 mt-2"
-                  placeholder="Enter Your Phone Number"
+                  type="number"
+                  class="form-control"
+                  id="phoneNumber"
+                  required
+                  placeholder="Phone number"
                 />
+                <div class="valid-tooltip">Looks good!</div>
+                <div
+                  id="validationServerUsernameFeedback"
+                  class="invalid-feedback"
+                >
+                  Please choose a phone.
+                </div>
               </div>
-              <div class="form-item">
-                <label for="address" class="fw-medium">Address</label>
+              <div class="col-md-12 position-relative">
+                <label for="Address" class="form-label">Address</label>
                 <input
-                  id="address"
                   type="text"
-                  required=""
-                  class="w-100 border rounded-1 border-secondary py-2 px-3 mt-2"
+                  class="form-control"
+                  id="Address"
+                  required
                   placeholder="Address"
                 />
+                <div class="valid-tooltip">Looks good!</div>
+                <div
+                  id="validationServerUsernameFeedback"
+                  class="invalid-feedback"
+                >
+                  Please choose a phone.
+                </div>
               </div>
-            </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-primary text-white fw-medium"
-              >
-                Update
-              </button>
-            </div>
-          </form>
+
+              <div class="col-12">
+                <button
+                  class="btn btn-primary fw-bolder text-white"
+                  type="submit"
+                >
+                  Upadate
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
@@ -335,7 +375,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <h1 class="modal-title fs-5" id="exampleModalLabel">
-              Edit Shipping Address
+              Billing Shipping Address
             </h1>
             <button
               type="button"
@@ -344,68 +384,109 @@
               aria-label="Close"
             ></button>
           </div>
-          <form action="">
-            <div class="modal-body">
-              <div class="form-item">
-                <label for="firstname" class="fw-medium">Firstname</label>
+
+          <div class="modal-body">
+            <form class="row g-3 needs-validation" novalidate>
+              <div class="col-md-6 position-relative">
+                <label for="validationTooltip01" class="form-label"
+                  >First name</label
+                >
                 <input
-                  id="firstname"
                   type="text"
-                  required=""
-                  class="w-100 border rounded-1 border-secondary py-2 px-3 mt-2"
+                  class="form-control"
+                  id="validationTooltip01"
+                  required
                   placeholder="Firstname"
                 />
+                <div class="valid-tooltip">Looks good!</div>
+                <div
+                  id="validationServerUsernameFeedback"
+                  class="invalid-feedback"
+                >
+                  Please choose a firstname.
+                </div>
               </div>
-              <div class="form-item">
-                <label for="lastname" class="fw-medium">Lastname</label>
+              <div class="col-md-6 position-relative">
+                <label for="validationTooltip02" class="form-label"
+                  >Last name</label
+                >
                 <input
-                  id="lastname"
                   type="text"
-                  required=""
-                  class="w-100 border rounded-1 border-secondary py-2 px-3 mt-2"
+                  class="form-control"
+                  id="validationTooltip02"
+                  required
                   placeholder="Lastname"
                 />
+                <div class="valid-tooltip">Looks good!</div>
+                <div
+                  id="validationServerUsernameFeedback"
+                  class="invalid-feedback"
+                >
+                  Please choose a lastname.
+                </div>
               </div>
-              <div class="form-item">
-                <label for="email" class="fw-medium">Email</label>
+              <div class="col-md-12 position-relative">
+                <label for="email" class="form-label">Email</label>
                 <input
+                  type="email"
+                  class="form-control"
                   id="email"
-                  type="text"
-                  required=""
-                  class="w-100 border rounded-1 border-secondary py-2 px-3 mt-2"
+                  required
                   placeholder="Email"
                 />
+                <div class="valid-tooltip">Looks good!</div>
+                <div
+                  id="validationServerUsernameFeedback"
+                  class="invalid-feedback"
+                >
+                  Please choose a email.
+                </div>
               </div>
-              <div class="form-item">
-                <label for="call" class="fw-medium">Phone Number</label>
+              <div class="col-md-12 position-relative">
+                <label for="phoneNumber" class="form-label">Phone number</label>
                 <input
-                  id="call"
-                  type="text"
-                  required=""
-                  class="w-100 border rounded-1 border-secondary py-2 px-3 mt-2"
-                  placeholder="Enter Your Phone Number"
+                  type="number"
+                  class="form-control"
+                  id="phoneNumber"
+                  required
+                  placeholder="Phone number"
                 />
+                <div class="valid-tooltip">Looks good!</div>
+                <div
+                  id="validationServerUsernameFeedback"
+                  class="invalid-feedback"
+                >
+                  Please choose a phone.
+                </div>
               </div>
-              <div class="form-item">
-                <label for="address" class="fw-medium">Address</label>
+              <div class="col-md-12 position-relative">
+                <label for="Address" class="form-label">Address</label>
                 <input
-                  id="address"
                   type="text"
-                  required=""
-                  class="w-100 border rounded-1 border-secondary py-2 px-3 mt-2"
+                  class="form-control"
+                  id="Address"
+                  required
                   placeholder="Address"
                 />
+                <div class="valid-tooltip">Looks good!</div>
+                <div
+                  id="validationServerUsernameFeedback"
+                  class="invalid-feedback"
+                >
+                  Please choose a phone.
+                </div>
               </div>
-            </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-primary text-white fw-medium"
-              >
-                Update
-              </button>
-            </div>
-          </form>
+
+              <div class="col-12">
+                <button
+                  class="btn btn-primary fw-bolder text-white"
+                  type="submit"
+                >
+                  Upadate
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>

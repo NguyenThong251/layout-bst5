@@ -237,6 +237,88 @@
       </div>
     </section>
 
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="viewbill"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Bill Your Information
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="bill-content">
+              <div
+                class="text-dark border-bottom border-2 border-border-color mb-2 name"
+              >
+                Họ tên: Phan Văn Tèo
+              </div>
+              <div
+                class="text-dark border-bottom border-2 border-border-color mb-2 address"
+              >
+                Địa chỉ: 195 Hàm Tử
+              </div>
+              <div
+                class="text-dark border-bottom border-2 border-border-color mb-2 email"
+              >
+                Email: babdu@gmail.com
+              </div>
+              <div
+                class="text-dark border-bottom border-2 border-border-color mb-2 phone"
+              >
+                Phone: 090880980
+              </div>
+              <div
+                class="text-dark border-bottom border-2 border-border-color mb-2 note"
+              >
+                Ghi chú:
+              </div>
+              <div
+                class="text-dark border-bottom border-2 border-border-color mb-2 receiver-name"
+              >
+                Họ tên người nhận: Ba Tèo
+              </div>
+              <div
+                class="text-dark border-bottom border-2 border-border-color mb-2 receiver-email"
+              >
+                Email người nhận: bateo@gmail.com
+              </div>
+              <div
+                class="text-dark border-bottom border-2 border-border-color mb-2 receiver-phone"
+              >
+                Số điện thoại người nhận: 09080099
+              </div>
+              <div
+                class="text-dark border-bottom border-2 border-border-color mb-2 receiver-address"
+              >
+                Địa chỉ nhận: 199 Hàm Tử
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-primary text-white"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- About -->
     <section class="account-header container mt-7">
       <div class="account-profile">
@@ -316,7 +398,12 @@
                   <td>Processing</td>
                   <td><span>$326.63 for 1 items</span></td>
                   <td class="text-center">
-                    <ion-icon class="cursor" name="eye-outline"></ion-icon>
+                    <ion-icon
+                      data-bs-toggle="modal"
+                      data-bs-target="#viewbill"
+                      class="cursor"
+                      name="eye-outline"
+                    ></ion-icon>
                   </td>
                 </tr>
               </tbody>

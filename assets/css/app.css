@@ -13850,32 +13850,6 @@ input[type=radio]:checked {
   box-shadow: none;
 }
 
-input[type=text]:focus {
-  border-color: #64b496;
-  box-shadow: 1px 1px 5px #64b496;
-}
-
-input[type=email]:focus {
-  border-color: #64b496;
-  box-shadow: 1px 1px 5px #64b496;
-}
-
-input[type=password]:focus {
-  border-color: #64b496;
-  box-shadow: 1px 1px 5px #64b496;
-}
-
-select[type=email]:focus {
-  border-color: #64b496;
-  box-shadow: 1px 1px 5px #64b496;
-}
-
-textarea:focus {
-  padding: 1rem 0.75rem !important;
-  border-color: #64b496 !important;
-  box-shadow: none !important;
-}
-
 .button-news:hover {
   gap: 1rem !important;
   transition: all 0.2s linear;
@@ -13910,6 +13884,168 @@ textarea:focus {
 
 .account-list {
   transition: all 0.2s linear;
+}
+
+.section-categories::before {
+  width: 50px;
+  height: 80px;
+  content: "";
+  background-image: url(../../uploads/1.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  right: 50px;
+  z-index: 0;
+}
+
+.section-categories::after {
+  width: 100px;
+  height: 100px;
+  content: "";
+  background-image: url(../../uploads/11.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0;
+  left: 100px;
+  z-index: 0;
+}
+
+.product-popular::before {
+  width: 80px;
+  height: 110px;
+  content: "";
+  background-image: url(../../uploads/3.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 270px;
+  left: 20px;
+  z-index: 0;
+}
+
+.product-popular::after {
+  width: 80px;
+  height: 110px;
+  content: "";
+  background-image: url(../../uploads/4.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 170px;
+  right: 20px;
+  z-index: 0;
+}
+
+.product-main::after {
+  width: 110px;
+  height: 110px;
+  content: "";
+  background-image: url(../../uploads/5.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  position: absolute;
+  bottom: -100px;
+  left: -50px;
+  z-index: 0;
+}
+
+.section-service::after {
+  width: 60px;
+  height: 60px;
+  content: "";
+  background-image: url(../../uploads/7.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  position: absolute;
+  top: 50px;
+  right: 100px;
+  z-index: 0;
+}
+
+.section-service::before {
+  width: 80px;
+  height: 100px;
+  content: "";
+  background-image: url(../../uploads/8.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  position: absolute;
+  top: 150px;
+  left: 100px;
+  z-index: 0;
+}
+
+.footer::before {
+  width: 80px;
+  height: 100px;
+  content: "";
+  background-image: url(../../uploads/12.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  position: absolute;
+  top: -20px;
+  left: 50px;
+  z-index: 0;
+}
+
+.footer::after {
+  width: 120px;
+  height: 150px;
+  content: "";
+  background-image: url(../../uploads/13.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  position: absolute;
+  top: 90px;
+  right: 50px;
+  z-index: 0;
+}
+
+.product-hot::after {
+  width: 120px;
+  height: 150px;
+  content: "";
+  background-image: url(../../uploads/shape-3.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  position: absolute;
+  top: 90px;
+  right: 50px;
+  z-index: 0;
+}
+
+.line::after {
+  content: "Or";
+  font-weight: 500;
+  display: inline-block;
+  position: relative;
+  top: -10px;
+  padding: 0 16px;
+  background: #fff;
 }
 
 .custom-text-color {

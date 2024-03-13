@@ -249,7 +249,38 @@
               <div class="form-logo d-flex justify-content-center">
                 <img src="uploads/logo.png" alt="" width="120" />
               </div>
-              <form
+              <form class="row needs-validation" novalidate>
+                <div class="col-md-12">
+                  <label for="validationServer01" class="form-label fw-medium"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="validationServer01"
+                    required
+                  />
+                  <div class="invalid-feedback">Please choose a email.</div>
+                </div>
+                <div
+                  class="col-12 mt-2 d-flex justify-content-between align-items-center"
+                >
+                  <button
+                    type="submit"
+                    class="btn btn-primary text-white fw-semibold"
+                  >
+                    Submit
+                  </button>
+                  <span
+                    ><a
+                      class="text-border-color text-decoration-none fs-6"
+                      href="#"
+                      >Signup?</a
+                    ></span
+                  >
+                </div>
+              </form>
+              <!-- <form
                 action=""
                 class="form-content mt-3 d-flex flex-column gap-3"
               >
@@ -277,7 +308,7 @@
                     ></span
                   >
                 </div>
-              </form>
+              </form> -->
             </div>
             <div class="col-4"></div>
           </div>

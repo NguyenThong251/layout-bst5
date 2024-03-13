@@ -100,7 +100,7 @@ $(document).ready(function () {
     // itemsDesktopSmall: [979, 3],
     responsive: {
       0: {
-        items: 4,
+        items: 1,
         nav: true,
       },
       600: {
@@ -108,7 +108,7 @@ $(document).ready(function () {
         nav: false,
       },
       1000: {
-        items: 2,
+        items: 3,
         nav: true,
         loop: false,
       },

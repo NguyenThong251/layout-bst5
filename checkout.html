@@ -462,7 +462,7 @@
           </div>
         </div>
         <div class="checkout-left col-lg-8 wow fadeInRight col-md-12">
-          <form action="">
+          <form action="" class="needs-validation" novalidate>
             <div
               class="bill-info p-3 border rounded-1 border-secondary border-2"
             >
@@ -471,258 +471,487 @@
                 <span class="fs-6 text-border-color">
                   Fill in the information to go to the next step.</span
                 >
-
-                <div class="bill-info" class="d-flex flex-column gap-5 py-4">
-                  <div class="row g-2 mt-1">
-                    <div class="col-md">
-                      <div class="d-flex flex-column gap-2">
-                        <label for="Firstname" class="fw-medium"
-                          >First name</label
-                        >
-                        <input
-                          id="Firstname"
-                          type="text"
-                          class="form-control"
-                          id="floatingInputGrid"
-                          placeholder="Firstname"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-md">
-                      <div class="d-flex flex-column gap-2">
-                        <label for="Lastname" class="fw-medium"
-                          >Last name</label
-                        >
-                        <input
-                          id="Lastname"
-                          type="text"
-                          class="form-control"
-                          id="floatingInputGrid"
-                          placeholder="Lastname"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row g-2 mt-1">
-                    <div class="col-md d-flex flex-column gap-2">
-                      <label for="Address" class="fw-medium">Address</label>
-                      <input
-                        id="Address"
-                        type="text"
-                        class="form-control"
-                        id="floatingInputGrid"
-                        placeholder="Address"
-                      />
-                    </div>
-                    <div class="col-md d-flex flex-column gap-2">
-                      <label for="Email" class="fw-medium">Email</label>
-                      <input
-                        id="Email"
-                        type="text"
-                        class="form-control"
-                        id="floatingInputGrid"
-                        placeholder="Email"
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div class="row g-2 mt-1">
-                    <div class="col-md">
-                      <div class="d-flex flex-column gap-2">
-                        <label for="City" class="fw-medium">City</label>
-                        <input
-                          id="City"
-                          type="text"
-                          class="form-control"
-                          id="floatingInputGrid"
-                          placeholder="City"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-md">
-                      <div class="d-flex flex-column gap-2">
-                        <label for="Postcode" class="fw-medium"
-                          >Post Code</label
-                        >
-                        <input
-                          id="Postcode"
-                          type="text"
-                          class="form-control"
-                          id="floatingInputGrid"
-                          placeholder="Postcode"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row g-2 mt-1">
-                    <div class="col-md">
-                      <div class="d-flex flex-column gap-2">
-                        <label for="Country" class="fw-medium">Country</label>
-
-                        <input
-                          id="Country"
-                          type="text"
-                          class="form-control"
-                          id="floatingInputGrid"
-                          placeholder="Country"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-md">
-                      <div class="d-flex flex-column gap-2">
-                        <label for="call" class="fw-medium">Phone Number</label>
-
-                        <input
-                          id="call"
-                          type="text"
-                          class="form-control"
-                          id="floatingInputGrid"
-                          placeholder="Phonenumber"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <h3 class="note-ship fs-6 fw-semibold mt-3">
-                    Add Comments About Your Order
-                  </h3>
-                  <div class="form-floating">
-                    <textarea
+              </div>
+              <div class="row g-3 mt-3">
+                <div class="col-md-6 position-relative">
+                  <label for="validationTooltip01" class="form-label fw-medium"
+                    >First name</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationTooltip01"
+                    required
+                  />
+                  <div class="invalid-tooltip">Please Firstname</div>
+                </div>
+                <div class="col-md-6 position-relative">
+                  <label for="validationTooltip02" class="form-label fw-medium"
+                    >Last name</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationTooltip02"
+                    required
+                  />
+                  <div class="invalid-tooltip">Please Lastname</div>
+                </div>
+                <div class="col-md-12 position-relative">
+                  <label for="email" class="form-label fw-medium">Email</label>
+                  <div class="input-group has-validation">
+                    <input
+                      type="email"
                       class="form-control"
-                      placeholder="Leave a comment here"
-                      id="floatingTextarea2"
-                      style="height: 100%"
-                    ></textarea>
-                    <label for="floatingTextarea2">Comments</label>
+                      id="email"
+                      aria-describedby="validationTooltipUsernamePrepend"
+                      required
+                    />
+                    <div class="invalid-tooltip">
+                      Please choose a unique and valid email.
+                    </div>
                   </div>
                 </div>
-                <div class="order-different d-flex flex-column gap-3 py-4">
-                  <div
-                    class="accordion accordion-flush"
-                    id="accordionFlushExample"
+                <div class="col-md-12 position-relative">
+                  <label for="Address" class="form-label fw-medium"
+                    >Address</label
                   >
+                  <div class="input-group has-validation">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="Address"
+                      aria-describedby="validationTooltipUsernamePrepend"
+                      required
+                    />
+                    <div class="invalid-tooltip">Please choose Address</div>
+                  </div>
+                </div>
+                <div class="col-md-6 position-relative">
+                  <label for="validationTooltip03" class="form-label fw-medium"
+                    >City</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationTooltip03"
+                    required
+                  />
+                  <div class="invalid-tooltip">
+                    Please provide a valid city.
+                  </div>
+                </div>
+
+                <div class="col-md-6 position-relative">
+                  <label for="validationTooltip05" class="form-label fw-medium"
+                    >Zip</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationTooltip05"
+                    required
+                  />
+                  <div class="invalid-tooltip">Please provide a valid zip.</div>
+                </div>
+                <div class="col-md-6 position-relative">
+                  <label for="country" class="form-label fw-medium"
+                    >Country</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="country"
+                    required
+                  />
+                  <div class="invalid-tooltip">Please choose a country.</div>
+                </div>
+                <div class="col-md-6 position-relative">
+                  <label for="number" class="form-label fw-medium"
+                    >Phonenumber</label
+                  >
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="number"
+                    required
+                  />
+                  <div class="invalid-tooltip">Please choose a number.</div>
+                </div>
+                <div class="col-md-12 mt-3">
+                  <label for="floatingTextarea2" class="fw-medium"
+                    >Comments</label
+                  >
+                  <textarea
+                    class="form-control mt-3"
+                    placeholder="Leave a comment here"
+                    id="floatingTextarea2"
+                    style="height: 100px"
+                  ></textarea>
+                </div>
+                <div class="col-12 mt-3">
+                  <div class="accordion" id="accordionExample">
                     <div class="accordion-item">
-                      <h2 class="accordion-header" id="flush-headingOne">
+                      <h2 class="accordion-header" id="headingOne">
                         <button
-                          class="accordion-button collapsed"
+                          class="accordion-button"
                           type="button"
                           data-bs-toggle="collapse"
-                          data-bs-target="#flush-collapseOne"
-                          aria-expanded="false"
-                          aria-controls="flush-collapseOne"
+                          data-bs-target="#collapseOne"
+                          aria-expanded="true"
+                          aria-controls="collapseOne"
                         >
                           Other recipient information
                         </button>
                       </h2>
                       <div
-                        id="flush-collapseOne"
+                        id="collapseOne"
                         class="accordion-collapse collapse"
-                        aria-labelledby="flush-headingOne"
-                        data-bs-parent="#accordionFlushExample"
+                        aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample"
                       >
-                        <div
-                          class="bill-info"
-                          class="d-flex flex-column gap-5 py-4"
-                        >
-                          <div class="row g-2 mt-1">
-                            <div class="col-md">
-                              <div class="d-flex flex-column gap-2">
-                                <label for="Firstname" class="fw-medium"
-                                  >First name</label
-                                >
-                                <input
-                                  id="Firstname"
-                                  type="text"
-                                  class="form-control"
-                                  id="floatingInputGrid"
-                                  placeholder="Firstname"
-                                />
-                              </div>
-                            </div>
-                            <div class="col-md">
-                              <div class="d-flex flex-column gap-2">
-                                <label for="Lastname" class="fw-medium"
-                                  >Last name</label
-                                >
-                                <input
-                                  id="Lastname"
-                                  type="text"
-                                  class="form-control"
-                                  id="floatingInputGrid"
-                                  placeholder="Lastname"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                          <div class="d-flex flex-column gap-2 mt-1">
-                            <label for="Address" class="fw-medium"
-                              >Address</label
+                        <div class="accordion-body row">
+                          <div class="col-md-6 position-relative">
+                            <label
+                              for="validationTooltip01"
+                              class="form-label fw-medium"
+                              >First name</label
                             >
                             <input
-                              id="Address"
                               type="text"
                               class="form-control"
-                              id="floatingInputGrid"
-                              placeholder="Address"
+                              id="validationTooltip01"
                             />
                           </div>
-                          <div class="row g-2 mt-1">
-                            <div class="col-md">
-                              <div class="d-flex flex-column gap-2">
-                                <label for="City" class="fw-medium">City</label>
-                                <input
-                                  id="City"
-                                  type="text"
-                                  class="form-control"
-                                  id="floatingInputGrid"
-                                  placeholder="City"
-                                />
-                              </div>
-                            </div>
-                            <div class="col-md">
-                              <div class="d-flex flex-column gap-2">
-                                <label for="Postcode" class="fw-medium"
-                                  >Post Code</label
-                                >
-                                <input
-                                  id="Postcode"
-                                  type="text"
-                                  class="form-control"
-                                  id="floatingInputGrid"
-                                  placeholder="Postcode"
-                                />
-                              </div>
+                          <div class="col-md-6 position-relative">
+                            <label
+                              for="validationTooltip02"
+                              class="form-label fw-medium"
+                              >Last name</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="validationTooltip02"
+                            />
+                          </div>
+
+                          <div class="col-md-12 position-relative">
+                            <label for="Address" class="form-label fw-medium"
+                              >Address</label
+                            >
+                            <div class="input-group has-validation">
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="Address"
+                                aria-describedby="validationTooltipUsernamePrepend"
+                              />
                             </div>
                           </div>
-                          <div class="row g-2 mt-1">
-                            <div class="col-md">
-                              <div class="d-flex flex-column gap-2">
-                                <label for="Country" class="fw-medium"
-                                  >Country</label
-                                >
+                          <div class="col-md-6 position-relative">
+                            <label
+                              for="validationTooltip03"
+                              class="form-label fw-medium"
+                              >City</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="validationTooltip03"
+                            />
+                          </div>
 
-                                <input
-                                  id="Country"
-                                  type="text"
-                                  class="form-control"
-                                  id="floatingInputGrid"
-                                  placeholder="Country"
-                                />
-                              </div>
+                          <div class="col-md-6 position-relative">
+                            <label
+                              for="validationTooltip05"
+                              class="form-label fw-medium"
+                              >Zip</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="validationTooltip05"
+                            />
+                          </div>
+                          <div class="col-md-6 position-relative">
+                            <label for="country" class="form-label fw-medium"
+                              >Country</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="country"
+                            />
+                          </div>
+                          <div class="col-md-6 position-relative">
+                            <label for="number" class="form-label fw-medium"
+                              >Phonenumber</label
+                            >
+                            <input
+                              type="number"
+                              class="form-control"
+                              id="number"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button
+                    class="btn btn-primary text-white fw-bolder mt-3"
+                    type="submit"
+                  >
+                    Place Order
+                  </button>
+                </div>
+              </div>
+              <!-- <div class="bill-info" class="d-flex flex-column gap-5 py-4">
+                <div class="row g-2 mt-1">
+                  <div class="col-md">
+                    <div class="d-flex flex-column gap-2">
+                      <label for="Firstname" class="fw-medium"
+                        >First name</label
+                      >
+                      <input
+                        id="Firstname"
+                        type="text"
+                        class="form-control"
+                        id="floatingInputGrid"
+                        placeholder="Firstname"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md">
+                    <div class="d-flex flex-column gap-2">
+                      <label for="Lastname" class="fw-medium">Last name</label>
+                      <input
+                        id="Lastname"
+                        type="text"
+                        class="form-control"
+                        id="floatingInputGrid"
+                        placeholder="Lastname"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-2 mt-1">
+                  <div class="col-md d-flex flex-column gap-2">
+                    <label for="Address" class="fw-medium">Address</label>
+                    <input
+                      id="Address"
+                      type="text"
+                      class="form-control"
+                      id="floatingInputGrid"
+                      placeholder="Address"
+                    />
+                  </div>
+                  <div class="col-md d-flex flex-column gap-2">
+                    <label for="Email" class="fw-medium">Email</label>
+                    <input
+                      id="Email"
+                      type="text"
+                      class="form-control"
+                      id="floatingInputGrid"
+                      placeholder="Email"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="row g-2 mt-1">
+                  <div class="col-md">
+                    <div class="d-flex flex-column gap-2">
+                      <label for="City" class="fw-medium">City</label>
+                      <input
+                        id="City"
+                        type="text"
+                        class="form-control"
+                        id="floatingInputGrid"
+                        placeholder="City"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md">
+                    <div class="d-flex flex-column gap-2">
+                      <label for="Postcode" class="fw-medium">Post Code</label>
+                      <input
+                        id="Postcode"
+                        type="text"
+                        class="form-control"
+                        id="floatingInputGrid"
+                        placeholder="Postcode"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-2 mt-1">
+                  <div class="col-md">
+                    <div class="d-flex flex-column gap-2">
+                      <label for="Country" class="fw-medium">Country</label>
+
+                      <input
+                        id="Country"
+                        type="text"
+                        class="form-control"
+                        id="floatingInputGrid"
+                        placeholder="Country"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md">
+                    <div class="d-flex flex-column gap-2">
+                      <label for="call" class="fw-medium">Phone Number</label>
+
+                      <input
+                        id="call"
+                        type="text"
+                        class="form-control"
+                        id="floatingInputGrid"
+                        placeholder="Phonenumber"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <h3 class="note-ship fs-6 fw-semibold mt-3">
+                  Add Comments About Your Order
+                </h3>
+                <div class="form-floating">
+                  <textarea
+                    class="form-control"
+                    placeholder="Leave a comment here"
+                    id="floatingTextarea2"
+                    style="height: 100%"
+                  ></textarea>
+                  <label for="floatingTextarea2">Comments</label>
+                </div>
+              </div>
+              <div class="order-different d-flex flex-column gap-3 py-4">
+                <div
+                  class="accordion accordion-flush"
+                  id="accordionFlushExample"
+                >
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseOne"
+                      >
+                        Other recipient information
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseOne"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingOne"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div
+                        class="bill-info"
+                        class="d-flex flex-column gap-5 py-4"
+                      >
+                        <div class="row g-2 mt-1">
+                          <div class="col-md">
+                            <div class="d-flex flex-column gap-2">
+                              <label for="Firstname" class="fw-medium"
+                                >First name</label
+                              >
+                              <input
+                                id="Firstname"
+                                type="text"
+                                class="form-control"
+                                id="floatingInputGrid"
+                                placeholder="Firstname"
+                              />
                             </div>
-                            <div class="col-md">
-                              <div class="d-flex flex-column gap-2">
-                                <label for="call" class="fw-medium"
-                                  >Phone Number</label
-                                >
+                          </div>
+                          <div class="col-md">
+                            <div class="d-flex flex-column gap-2">
+                              <label for="Lastname" class="fw-medium"
+                                >Last name</label
+                              >
+                              <input
+                                id="Lastname"
+                                type="text"
+                                class="form-control"
+                                id="floatingInputGrid"
+                                placeholder="Lastname"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="d-flex flex-column gap-2 mt-1">
+                          <label for="Address" class="fw-medium">Address</label>
+                          <input
+                            id="Address"
+                            type="text"
+                            class="form-control"
+                            id="floatingInputGrid"
+                            placeholder="Address"
+                          />
+                        </div>
+                        <div class="row g-2 mt-1">
+                          <div class="col-md">
+                            <div class="d-flex flex-column gap-2">
+                              <label for="City" class="fw-medium">City</label>
+                              <input
+                                id="City"
+                                type="text"
+                                class="form-control"
+                                id="floatingInputGrid"
+                                placeholder="City"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-md">
+                            <div class="d-flex flex-column gap-2">
+                              <label for="Postcode" class="fw-medium"
+                                >Post Code</label
+                              >
+                              <input
+                                id="Postcode"
+                                type="text"
+                                class="form-control"
+                                id="floatingInputGrid"
+                                placeholder="Postcode"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row g-2 mt-1">
+                          <div class="col-md">
+                            <div class="d-flex flex-column gap-2">
+                              <label for="Country" class="fw-medium"
+                                >Country</label
+                              >
 
-                                <input
-                                  id="call"
-                                  type="text"
-                                  class="form-control"
-                                  id="floatingInputGrid"
-                                  placeholder="Phonenumber"
-                                />
-                              </div>
+                              <input
+                                id="Country"
+                                type="text"
+                                class="form-control"
+                                id="floatingInputGrid"
+                                placeholder="Country"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-md">
+                            <div class="d-flex flex-column gap-2">
+                              <label for="call" class="fw-medium"
+                                >Phone Number</label
+                              >
+
+                              <input
+                                id="call"
+                                type="text"
+                                class="form-control"
+                                id="floatingInputGrid"
+                                placeholder="Phonenumber"
+                              />
                             </div>
                           </div>
                         </div>
@@ -730,12 +959,7 @@
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="btn-checkout d-flex justify-content-end my-4">
-              <button class="btn btn-primary text-white fw-bolder">
-                Place Order
-              </button>
+              </div> -->
             </div>
           </form>
         </div>
