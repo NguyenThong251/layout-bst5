@@ -31,51 +31,69 @@
     <link rel="stylesheet" href="assets/css/app.css" />
   </head>
   <body>
+    <!-- MODEL SEARCH  -->
+    <div
+      class="offcanvas offcanvas-top"
+      tabindex="-1"
+      id="offcanvasSearch"
+      aria-labelledby="offcanvasTopLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasTopLabel">Search Product</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="w-25 mx-auto">
+          <form
+            action=""
+            class="header-search border-bottom border-2 border-primary rounded-2 d-flex align-items-center justify-content-between"
+          >
+            <input
+              class="border-0 ps-3 fw-medium"
+              placeholder="Search product"
+              type="text"
+              class="input-search"
+            />
+
+            <a
+              class="ms-2 cursor p-2 d-flex justify-content-center align-content-center fs-4 fw-bold text-white"
+            >
+              <ion-icon
+                class="fs-4 text-primary"
+                name="search-outline"
+              ></ion-icon>
+            </a>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- MODEL SEARCH END  -->
     <!-- HEADER  -->
     <header class="header">
       <div class="header-top container border-bottom border-2 border-light">
         <div
-          class="header-top-main d-flex align-items-center justify-content-between py-3"
+          class="header-top-main align-items-center justify-content-between py-3"
         >
-          <div class="header-top-left">
-            <div class="header-logo">
-              <img
-                src="uploads/logo.png"
-                alt=""
-                class="logo-img logo img-cover"
-              />
-            </div>
-          </div>
-          <div class="header-top-center">
-            <form
-              action=""
-              class="header-search border border-2 border-primary rounded-2 d-flex align-items-center"
-            >
-              <input
-                class="border-0 h-40 ps-3 fw-medium"
-                placeholder="Search product"
-                type="text"
-                class="input-search"
-              />
-              <select
-                name=""
-                id=""
-                class="border-0 border-start border-primary border-2 py-2 px-2 d-flex align-items-center gap-3"
-              >
-                <option class="px-4" value="">All categorys</option>
-                <option value="">Apple</option>
-                <option value="">Orange</option>
-              </select>
-              <a
-                class="ms-2 cursor bg-primary p-2 d-flex justify-content-center align-content-center fs-4 fw-bold text-white"
-              >
-                <ion-icon class="fs-4" name="search-outline"></ion-icon>
-              </a>
-            </form>
-          </div>
+          <img src="uploads/logo.png" alt="" class="logo-img logo" width="40" />
+
           <div
             class="header-top-right d-flex align-items-center gap-3 fs-6 fw-medium"
           >
+            <div
+              href=""
+              class="d-flex align-items-center gap-2 hover-list cursor"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasSearch"
+              aria-controls="offcanvasTop"
+            >
+              <ion-icon class="fs-4" name="search-outline"></ion-icon>
+              <span>Search</span>
+            </div>
             <ul class="navbar-nav">
               <li class="nav-item dropdown hover-list">
                 <a
@@ -108,6 +126,7 @@
               <ion-icon class="fs-4" name="heart-outline"></ion-icon>
               <span>Wishlist</span>
             </div>
+
             <div
               data-bs-toggle="offcanvas"
               data-bs-target="#offcanvasRight"
