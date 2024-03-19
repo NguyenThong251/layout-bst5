@@ -125,7 +125,7 @@
               aria-controls="collapseOne-product"
             >
               <div
-                class="side-nav-item-content p-2 rounded-2 d-flex gap-3 align-items-center jus cursor hover-item active-navbar"
+                class="side-nav-item-content p-2 rounded-2 d-flex gap-3 align-items-center jus cursor hover-item"
               >
                 <ion-icon class="text-primary fs-5" name="layers"></ion-icon>
                 <span class="fs-6 fw-medium">Products</span>
@@ -166,7 +166,7 @@
               aria-controls="collapseOne-blog"
             >
               <div
-                class="side-nav-item-content p-2 rounded-2 d-flex gap-3 align-items-center jus cursor hover-item"
+                class="side-nav-item-content p-2 rounded-2 d-flex gap-3 align-items-center jus cursor hover-item active-navbar"
               >
                 <ion-icon class="text-primary fs-5" name="albums"></ion-icon>
                 <span class="fs-6 fw-medium">Blog</span>
@@ -394,9 +394,7 @@
         <div class="admin-main-content p-3 container-fluid bg-white">
           <div class="bg-light p-3 shadow-sm rounded-2">
             <div class="admin-main-header d-flex justify-content-between">
-              <h3 class="admin-main-header-title fs-5 fw-bolder">
-                All Category
-              </h3>
+              <h3 class="admin-main-header-title fs-5 fw-bolder">All Blog</h3>
               <div class="admin-main-header-btn d-flex align-items-center">
                 <button
                   class="btn btn-primary text-white fw-medium d-flex align-items-center gap-2"
@@ -428,14 +426,11 @@
                   <thead>
                     <tr>
                       <th class="fw-semibold">Id</th>
-                      <th class="fw-semibold">Product Name</th>
-                      <th class="fw-semibold">Category</th>
-                      <th class="fw-semibold">Imgage</th>
-                      <th class="fw-semibold">Quatity</th>
-                      <th class="fw-semibold">Price</th>
-                      <th class="fw-semibold">Offer</th>
-                      <th class="fw-semibold">Status</th>
+                      <th class="fw-semibold">Blog Name</th>
+                      <th class="fw-semibold">Blog Img</th>
                       <th class="fw-semibold">Date</th>
+                      <th class="fw-semibold">Blog User</th>
+                      <th class="fw-semibold">Status</th>
                       <th class="fw-semibold">Treding</th>
                       <th class="fw-semibold">Handle</th>
                     </tr>
@@ -443,25 +438,22 @@
                   <tbody>
                     <tr class="align-middle">
                       <th>1</th>
-                      <td>Banh so 1</td>
-                      <td>Hat</td>
+                      <td>Tên Blog nè</td>
                       <td>
                         <img
-                          src="../uploads/product1.jpg"
+                          src="../uploads/new1.jpg"
                           alt=""
                           width="80"
                           height="80"
                           class="border border-secondary rounded-2"
                         />
                       </td>
-                      <td>200</td>
-                      <td>200$</td>
-                      <td>20%</td>
-                      <td>Approved</td>
                       <td>25-01-2004</td>
+                      <td>Thong nè</td>
+                      <td>Active</td>
                       <td>
                         <span class="badge text-bg-primary text-white"
-                          >New</span
+                          >Hot</span
                         >
                       </td>
                       <td>
@@ -487,113 +479,22 @@
                     </tr>
                     <tr class="align-middle">
                       <th>1</th>
-                      <td>Banh so 1</td>
-                      <td>Hat</td>
+                      <td>Tên Blog nè</td>
                       <td>
                         <img
-                          src="../uploads/product1.jpg"
+                          src="../uploads/new1.jpg"
                           alt=""
                           width="80"
                           height="80"
                           class="border border-secondary rounded-2"
                         />
                       </td>
-                      <td>200</td>
-                      <td>200$</td>
-                      <td>20%</td>
-                      <td>Approved</td>
                       <td>25-01-2004</td>
+                      <td>Thong nè</td>
+                      <td>Inactive</td>
                       <td>
                         <span class="badge text-bg-primary text-white"
-                          >New</span
-                        >
-                      </td>
-                      <td>
-                        <div
-                          class="handle-option d-flex align-items-center gap-2"
-                        >
-                          <ion-icon
-                            class="fs-5 text-primary cursor"
-                            name="eye-outline"
-                          ></ion-icon>
-                          <ion-icon
-                            class="fs-5 text-info cursor"
-                            name="create-outline"
-                            data-bs-toggle="modal"
-                            data-bs-target="#categoryEdit"
-                          ></ion-icon>
-                          <ion-icon
-                            class="fs-5 text-danger cursor"
-                            name="trash-outline"
-                          ></ion-icon>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr class="align-middle">
-                      <th>1</th>
-                      <td>Banh so 1</td>
-                      <td>Hat</td>
-                      <td>
-                        <img
-                          src="../uploads/product1.jpg"
-                          alt=""
-                          width="80"
-                          height="80"
-                          class="border border-secondary rounded-2"
-                        />
-                      </td>
-                      <td>200</td>
-                      <td>200$</td>
-                      <td>20%</td>
-                      <td>Approved</td>
-                      <td>25-01-2004</td>
-                      <td>
-                        <span class="badge text-bg-primary text-white"
-                          >New</span
-                        >
-                      </td>
-                      <td>
-                        <div
-                          class="handle-option d-flex align-items-center gap-2"
-                        >
-                          <ion-icon
-                            class="fs-5 text-primary cursor"
-                            name="eye-outline"
-                          ></ion-icon>
-                          <ion-icon
-                            class="fs-5 text-info cursor"
-                            name="create-outline"
-                            data-bs-toggle="modal"
-                            data-bs-target="#categoryEdit"
-                          ></ion-icon>
-                          <ion-icon
-                            class="fs-5 text-danger cursor"
-                            name="trash-outline"
-                          ></ion-icon>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr class="align-middle">
-                      <th>1</th>
-                      <td>Banh so 1</td>
-                      <td>Hat</td>
-                      <td>
-                        <img
-                          src="../uploads/product1.jpg"
-                          alt=""
-                          width="80"
-                          height="80"
-                          class="border border-secondary rounded-2"
-                        />
-                      </td>
-                      <td>200</td>
-                      <td>200$</td>
-                      <td>20%</td>
-                      <td>Approved</td>
-                      <td>25-01-2004</td>
-                      <td>
-                        <span class="badge text-bg-primary text-white"
-                          >New</span
+                          >Hot</span
                         >
                       </td>
                       <td>
@@ -675,122 +576,73 @@
             <div class="modal-body">
               <form action="" class="mt-5 d-flex flex-column gap-3">
                 <div class="input-group-item row g-3">
-                  <label class="col-3 fs-6 fw-medium" for="Productid"
-                    >Product Id</label
+                  <label class="col-3 fs-6 fw-medium" for="Blogid"
+                    >Blog Id</label
                   >
                   <div class="col-9">
                     <input
                       type="text"
                       class="form-control"
-                      id="Productid"
-                      placeholder="Product Id"
+                      id="Blogid"
+                      placeholder="Blog Id"
                     />
                   </div>
                 </div>
                 <div class="input-group-item row g-3">
-                  <label class="col-3 fs-6 fw-medium" for="Productname"
-                    >Product Name</label
+                  <label class="col-3 fs-6 fw-medium" for="Blogname"
+                    >Blog Name</label
                   >
                   <div class="col-9">
                     <input
                       type="text"
                       class="form-control"
-                      id="Productname"
-                      placeholder="Product Name"
+                      id="Blogname"
+                      placeholder="Blog Name"
                     />
                   </div>
                 </div>
                 <div class="input-group-item row g-3">
-                  <label class="col-3 fs-6 fw-medium" for="Productdate"
-                    >Product Date</label
+                  <label class="col-3 fs-6 fw-medium" for="Blogdate"
+                    >Blog Date</label
                   >
                   <div class="col-9">
                     <input
-                      type="date"
+                      type="text"
                       class="form-control"
-                      id="Productdate"
-                      placeholder="Product Date"
+                      id="Blogdate"
+                      placeholder="Blog Date"
                     />
                   </div>
                 </div>
-                <div class="input-group-item row g-3">
-                  <label class="col-3 fs-6 fw-medium" for="ProductQuatity"
-                    >Product Quatity</label
-                  >
-                  <div class="col-9">
-                    <input
-                      type="number"
-                      class="form-control"
-                      id="ProductQuatity"
-                      placeholder="ProductQuatity"
-                    />
-                  </div>
-                </div>
-                <div class="input-group-item row g-3">
-                  <label class="col-3 fs-6 fw-medium" for="ProducPrice"
-                    >Product Price</label
-                  >
-                  <div class="col-9">
-                    <input
-                      type="number"
-                      class="form-control"
-                      id="Product Price"
-                      placeholder="Product Price"
-                    />
-                  </div>
-                </div>
+
                 <div class="input-group-item row g-3">
                   <label class="col-3 fs-6 fw-medium" for="Produc Category"
-                    >Product Category</label
-                  >
-                  <div class="col-9">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="Product Category"
-                      placeholder="Product  Category"
-                    />
-                  </div>
-                </div>
-                <div class="input-group-item row g-3">
-                  <label class="col-3 fs-6 fw-medium" for="ProducOffer"
-                    >Product Offer</label
-                  >
-                  <div class="col-9">
-                    <input
-                      type="range"
-                      class="form-range w-100"
-                      id="rangeInput"
-                      name="rangeInput"
-                      min="0"
-                      max="100"
-                      value="0"
-                      oninput="amount.value=rangeInput.value"
-                    />
-                    <output
-                      id="amount"
-                      name="amount"
-                      min-value="0"
-                      max-value="100"
-                      for="rangeInput"
-                      >0</output
-                    >
-                  </div>
-                </div>
-                <div class="input-group-item row g-3">
-                  <label class="col-3 fs-6 fw-medium" for="Status"
-                    >Status</label
+                    >Blog Category</label
                   >
                   <div class="col-9">
                     <select
                       class="form-select"
                       aria-label="Default select example"
                     >
-                      <option selected>Chọn trạng thái</option>
-                      <option value="1">Active</option>
-                      <option value="2">Pending</option>
-                      <option value="2">Disable</option>
+                      <option selected>Chọn Category</option>
+                      <option value="1">Hat</option>
+                      <option value="2">Trai Cay</option>
+                      <option value="2">Banh</option>
                     </select>
+                  </div>
+                </div>
+
+                <div class="input-group-item row g-3">
+                  <label class="col-3 fs-6 fw-medium" for="user-write"
+                    >User</label
+                  >
+                  <div class="col-9">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="user-write"
+                      placeholder="User Write"
+                    />
                   </div>
                 </div>
                 <div class="input-group-item row g-3">
@@ -811,8 +663,8 @@
                 </div>
 
                 <div class="input-group-item row g-3">
-                  <label class="col-3 fs-6 fw-medium" for="Productimg"
-                    >Product Images</label
+                  <label class="col-3 fs-6 fw-medium" for="Blogimg"
+                    >Blog Images</label
                   >
                   <div class="col-9">
                     <input
@@ -823,52 +675,10 @@
                     />
                   </div>
                 </div>
+
                 <div class="input-group-item row g-3">
-                  <label class="col-3 fs-6 fw-medium" for="Productimg"
-                    >Thumbnail Image</label
-                  >
-                  <div class="col-9">
-                    <input
-                      class="form-control"
-                      type="file"
-                      id="formFileMultiple"
-                      multiple
-                    />
-                  </div>
-                </div>
-                <div class="input-group-item row g-3">
-                  <label class="col-3 fs-6 fw-medium" for="Productimg"
-                    >Product Color</label
-                  >
-                  <div class="col-9">
-                    <div class="d-flex gap-3">
-                      <input
-                        type="color"
-                        class="form-control form-control-color"
-                        id="exampleColorInput"
-                        value="#56234"
-                        title="Choose your color"
-                      />
-                      <input
-                        type="color"
-                        class="form-control form-control-color"
-                        id="exampleColorInput"
-                        value="#D22828"
-                        title="Choose your color"
-                      />
-                      <input
-                        type="color"
-                        class="form-control form-control-color"
-                        id="exampleColorInput"
-                        value="#563d7c"
-                        title="Choose your color"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="input-group-item row g-3">
-                  <label class="col-3 fs-6 fw-medium" for="Productimg"
-                    >Product Description</label
+                  <label class="col-3 fs-6 fw-medium" for="Blogimg"
+                    >Blog Description</label
                   >
                   <div class="col-9">
                     <div id="editor"></div>
@@ -876,7 +686,7 @@
                 </div>
                 <div class="btn-update ms-auto">
                   <button class="btn btn-outline-primary fw-medium">
-                    Add Product
+                    Add Blog
                   </button>
                 </div>
               </form>

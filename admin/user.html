@@ -125,7 +125,7 @@
               aria-controls="collapseOne-product"
             >
               <div
-                class="side-nav-item-content p-2 rounded-2 d-flex gap-3 align-items-center jus cursor hover-item active-navbar"
+                class="side-nav-item-content p-2 rounded-2 d-flex gap-3 align-items-center jus cursor hover-item"
               >
                 <ion-icon class="text-primary fs-5" name="layers"></ion-icon>
                 <span class="fs-6 fw-medium">Products</span>
@@ -207,7 +207,7 @@
               aria-controls="collapseOne-user"
             >
               <div
-                class="side-nav-item-content p-2 rounded-2 d-flex gap-3 align-items-center jus cursor hover-item"
+                class="side-nav-item-content p-2 rounded-2 d-flex gap-3 align-items-center active-navbar cursor hover-item"
               >
                 <ion-icon class="text-primary fs-5" name="people"></ion-icon>
                 <span class="fs-6 fw-medium">User</span>
@@ -394,9 +394,7 @@
         <div class="admin-main-content p-3 container-fluid bg-white">
           <div class="bg-light p-3 shadow-sm rounded-2">
             <div class="admin-main-header d-flex justify-content-between">
-              <h3 class="admin-main-header-title fs-5 fw-bolder">
-                All Category
-              </h3>
+              <h3 class="admin-main-header-title fs-5 fw-bolder">All Blog</h3>
               <div class="admin-main-header-btn d-flex align-items-center">
                 <button
                   class="btn btn-primary text-white fw-medium d-flex align-items-center gap-2"
@@ -428,42 +426,29 @@
                   <thead>
                     <tr>
                       <th class="fw-semibold">Id</th>
-                      <th class="fw-semibold">Product Name</th>
-                      <th class="fw-semibold">Category</th>
-                      <th class="fw-semibold">Imgage</th>
-                      <th class="fw-semibold">Quatity</th>
-                      <th class="fw-semibold">Price</th>
-                      <th class="fw-semibold">Offer</th>
-                      <th class="fw-semibold">Status</th>
+                      <th class="fw-semibold">User Name</th>
+                      <th class="fw-semibold">User Img</th>
                       <th class="fw-semibold">Date</th>
-                      <th class="fw-semibold">Treding</th>
+                      <th class="fw-semibold">Status</th>
                       <th class="fw-semibold">Handle</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr class="align-middle">
                       <th>1</th>
-                      <td>Banh so 1</td>
-                      <td>Hat</td>
+                      <td>Tên User nè</td>
                       <td>
                         <img
-                          src="../uploads/product1.jpg"
+                          src="../uploads/about-profile.png"
                           alt=""
                           width="80"
                           height="80"
                           class="border border-secondary rounded-2"
                         />
                       </td>
-                      <td>200</td>
-                      <td>200$</td>
-                      <td>20%</td>
-                      <td>Approved</td>
                       <td>25-01-2004</td>
-                      <td>
-                        <span class="badge text-bg-primary text-white"
-                          >New</span
-                        >
-                      </td>
+                      <td>Active</td>
+
                       <td>
                         <div
                           class="handle-option d-flex align-items-center gap-2"
@@ -485,117 +470,22 @@
                         </div>
                       </td>
                     </tr>
+
                     <tr class="align-middle">
                       <th>1</th>
-                      <td>Banh so 1</td>
-                      <td>Hat</td>
+                      <td>Tên User nè</td>
                       <td>
                         <img
-                          src="../uploads/product1.jpg"
+                          src="../uploads/about-profile.png"
                           alt=""
                           width="80"
                           height="80"
                           class="border border-secondary rounded-2"
                         />
                       </td>
-                      <td>200</td>
-                      <td>200$</td>
-                      <td>20%</td>
-                      <td>Approved</td>
                       <td>25-01-2004</td>
-                      <td>
-                        <span class="badge text-bg-primary text-white"
-                          >New</span
-                        >
-                      </td>
-                      <td>
-                        <div
-                          class="handle-option d-flex align-items-center gap-2"
-                        >
-                          <ion-icon
-                            class="fs-5 text-primary cursor"
-                            name="eye-outline"
-                          ></ion-icon>
-                          <ion-icon
-                            class="fs-5 text-info cursor"
-                            name="create-outline"
-                            data-bs-toggle="modal"
-                            data-bs-target="#categoryEdit"
-                          ></ion-icon>
-                          <ion-icon
-                            class="fs-5 text-danger cursor"
-                            name="trash-outline"
-                          ></ion-icon>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr class="align-middle">
-                      <th>1</th>
-                      <td>Banh so 1</td>
-                      <td>Hat</td>
-                      <td>
-                        <img
-                          src="../uploads/product1.jpg"
-                          alt=""
-                          width="80"
-                          height="80"
-                          class="border border-secondary rounded-2"
-                        />
-                      </td>
-                      <td>200</td>
-                      <td>200$</td>
-                      <td>20%</td>
-                      <td>Approved</td>
-                      <td>25-01-2004</td>
-                      <td>
-                        <span class="badge text-bg-primary text-white"
-                          >New</span
-                        >
-                      </td>
-                      <td>
-                        <div
-                          class="handle-option d-flex align-items-center gap-2"
-                        >
-                          <ion-icon
-                            class="fs-5 text-primary cursor"
-                            name="eye-outline"
-                          ></ion-icon>
-                          <ion-icon
-                            class="fs-5 text-info cursor"
-                            name="create-outline"
-                            data-bs-toggle="modal"
-                            data-bs-target="#categoryEdit"
-                          ></ion-icon>
-                          <ion-icon
-                            class="fs-5 text-danger cursor"
-                            name="trash-outline"
-                          ></ion-icon>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr class="align-middle">
-                      <th>1</th>
-                      <td>Banh so 1</td>
-                      <td>Hat</td>
-                      <td>
-                        <img
-                          src="../uploads/product1.jpg"
-                          alt=""
-                          width="80"
-                          height="80"
-                          class="border border-secondary rounded-2"
-                        />
-                      </td>
-                      <td>200</td>
-                      <td>200$</td>
-                      <td>20%</td>
-                      <td>Approved</td>
-                      <td>25-01-2004</td>
-                      <td>
-                        <span class="badge text-bg-primary text-white"
-                          >New</span
-                        >
-                      </td>
+                      <td>Active</td>
+
                       <td>
                         <div
                           class="handle-option d-flex align-items-center gap-2"
@@ -675,108 +565,45 @@
             <div class="modal-body">
               <form action="" class="mt-5 d-flex flex-column gap-3">
                 <div class="input-group-item row g-3">
-                  <label class="col-3 fs-6 fw-medium" for="Productid"
-                    >Product Id</label
+                  <label class="col-3 fs-6 fw-medium" for="UserId"
+                    >User Id</label
                   >
                   <div class="col-9">
                     <input
                       type="text"
                       class="form-control"
-                      id="Productid"
-                      placeholder="Product Id"
+                      id="UserId"
+                      placeholder="User Id"
                     />
                   </div>
                 </div>
                 <div class="input-group-item row g-3">
-                  <label class="col-3 fs-6 fw-medium" for="Productname"
-                    >Product Name</label
+                  <label class="col-3 fs-6 fw-medium" for="User name"
+                    >User Name</label
                   >
                   <div class="col-9">
                     <input
                       type="text"
                       class="form-control"
-                      id="Productname"
-                      placeholder="Product Name"
+                      id="User name"
+                      placeholder="User  Name"
                     />
                   </div>
                 </div>
                 <div class="input-group-item row g-3">
-                  <label class="col-3 fs-6 fw-medium" for="Productdate"
-                    >Product Date</label
+                  <label class="col-3 fs-6 fw-medium" for="User date"
+                    >User Date</label
                   >
                   <div class="col-9">
                     <input
                       type="date"
                       class="form-control"
-                      id="Productdate"
-                      placeholder="Product Date"
+                      id="User date"
+                      placeholder="User  Date"
                     />
                   </div>
                 </div>
-                <div class="input-group-item row g-3">
-                  <label class="col-3 fs-6 fw-medium" for="ProductQuatity"
-                    >Product Quatity</label
-                  >
-                  <div class="col-9">
-                    <input
-                      type="number"
-                      class="form-control"
-                      id="ProductQuatity"
-                      placeholder="ProductQuatity"
-                    />
-                  </div>
-                </div>
-                <div class="input-group-item row g-3">
-                  <label class="col-3 fs-6 fw-medium" for="ProducPrice"
-                    >Product Price</label
-                  >
-                  <div class="col-9">
-                    <input
-                      type="number"
-                      class="form-control"
-                      id="Product Price"
-                      placeholder="Product Price"
-                    />
-                  </div>
-                </div>
-                <div class="input-group-item row g-3">
-                  <label class="col-3 fs-6 fw-medium" for="Produc Category"
-                    >Product Category</label
-                  >
-                  <div class="col-9">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="Product Category"
-                      placeholder="Product  Category"
-                    />
-                  </div>
-                </div>
-                <div class="input-group-item row g-3">
-                  <label class="col-3 fs-6 fw-medium" for="ProducOffer"
-                    >Product Offer</label
-                  >
-                  <div class="col-9">
-                    <input
-                      type="range"
-                      class="form-range w-100"
-                      id="rangeInput"
-                      name="rangeInput"
-                      min="0"
-                      max="100"
-                      value="0"
-                      oninput="amount.value=rangeInput.value"
-                    />
-                    <output
-                      id="amount"
-                      name="amount"
-                      min-value="0"
-                      max-value="100"
-                      for="rangeInput"
-                      >0</output
-                    >
-                  </div>
-                </div>
+
                 <div class="input-group-item row g-3">
                   <label class="col-3 fs-6 fw-medium" for="Status"
                     >Status</label
@@ -786,33 +613,16 @@
                       class="form-select"
                       aria-label="Default select example"
                     >
-                      <option selected>Chọn trạng thái</option>
-                      <option value="1">Active</option>
-                      <option value="2">Pending</option>
-                      <option value="2">Disable</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="input-group-item row g-3">
-                  <label class="col-3 fs-6 fw-medium" for="Trending"
-                    >Trending</label
-                  >
-                  <div class="col-9">
-                    <select
-                      class="form-select"
-                      aria-label="Default select example"
-                    >
-                      <option selected>Chọn trạng thái</option>
-                      <option value="1">Hot</option>
-                      <option value="2">Trending</option>
-                      <option value="3">View</option>
+                      <option selected>Chọn Status</option>
+                      <option value="1">Activate</option>
+                      <option value="2">Inactive</option>
                     </select>
                   </div>
                 </div>
 
                 <div class="input-group-item row g-3">
-                  <label class="col-3 fs-6 fw-medium" for="Productimg"
-                    >Product Images</label
+                  <label class="col-3 fs-6 fw-medium" for="Userimg"
+                    >User Images</label
                   >
                   <div class="col-9">
                     <input
@@ -823,52 +633,10 @@
                     />
                   </div>
                 </div>
+
                 <div class="input-group-item row g-3">
-                  <label class="col-3 fs-6 fw-medium" for="Productimg"
-                    >Thumbnail Image</label
-                  >
-                  <div class="col-9">
-                    <input
-                      class="form-control"
-                      type="file"
-                      id="formFileMultiple"
-                      multiple
-                    />
-                  </div>
-                </div>
-                <div class="input-group-item row g-3">
-                  <label class="col-3 fs-6 fw-medium" for="Productimg"
-                    >Product Color</label
-                  >
-                  <div class="col-9">
-                    <div class="d-flex gap-3">
-                      <input
-                        type="color"
-                        class="form-control form-control-color"
-                        id="exampleColorInput"
-                        value="#56234"
-                        title="Choose your color"
-                      />
-                      <input
-                        type="color"
-                        class="form-control form-control-color"
-                        id="exampleColorInput"
-                        value="#D22828"
-                        title="Choose your color"
-                      />
-                      <input
-                        type="color"
-                        class="form-control form-control-color"
-                        id="exampleColorInput"
-                        value="#563d7c"
-                        title="Choose your color"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="input-group-item row g-3">
-                  <label class="col-3 fs-6 fw-medium" for="Productimg"
-                    >Product Description</label
+                  <label class="col-3 fs-6 fw-medium" for="Userimg"
+                    >User Description</label
                   >
                   <div class="col-9">
                     <div id="editor"></div>
@@ -876,7 +644,7 @@
                 </div>
                 <div class="btn-update ms-auto">
                   <button class="btn btn-outline-primary fw-medium">
-                    Add Product
+                    Add User
                   </button>
                 </div>
               </form>

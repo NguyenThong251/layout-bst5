@@ -35,6 +35,9 @@
 //   width: calc(100vw - 280px);
 //   height: 70px;
 // }
+.active-navbar {
+  background-color: $secondary !important;
+}
 #page-container {
   min-width: 320px;
   min-height: 100vh;
@@ -109,4 +112,12 @@
   .page-header-content {
     width: 100%;
   }
+}
+.dashboard-list {
+  transform: translateY(0);
+  transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.dashboard-list:hover {
+  transform: translateY(-5px);
+  transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
 }

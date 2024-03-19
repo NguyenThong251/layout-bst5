@@ -27546,6 +27546,10 @@ textarea.form-control-lg {
   height: 13rem;
 }
 
+.active-navbar {
+  background-color: #e4f2ed !important;
+}
+
 #page-container {
   min-width: 320px;
   min-height: 100vh;
@@ -27629,6 +27633,15 @@ textarea.form-control-lg {
   .page-header-content {
     width: 100%;
   }
+}
+.dashboard-list {
+  transform: translateY(0);
+  transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.dashboard-list:hover {
+  transform: translateY(-5px);
+  transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 /*# sourceMappingURL=app.css.map */
