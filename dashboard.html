@@ -51,23 +51,24 @@
         <div class="w-25 mx-auto">
           <form
             action=""
-            class="header-search border-bottom border-2 border-primary rounded-2 d-flex align-items-center justify-content-between"
+            class="header-search border-bottom border-2 border-primary d-flex align-items-center justify-content-between"
           >
-            <input
-              class="border-0 ps-3 fw-medium"
-              placeholder="Search product"
-              type="text"
-              class="input-search"
-            />
-
-            <a
-              class="ms-2 cursor p-2 d-flex justify-content-center align-content-center fs-4 fw-bold text-white"
-            >
-              <ion-icon
-                class="fs-4 text-primary"
-                name="search-outline"
-              ></ion-icon>
-            </a>
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control border-0"
+                placeholder="Search Product"
+                aria-label="Recipient's username"
+                aria-describedby="button-addon2"
+              />
+              <button
+                class="btn btn-secondary"
+                type="button"
+                id="button-addon2"
+              >
+                <ion-icon name="search" class="text-primary"></ion-icon>
+              </button>
+            </div>
           </form>
         </div>
       </div>
